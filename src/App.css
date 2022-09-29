@@ -1,38 +1,72 @@
+* {
+  font-family: 'Signika', sans-serif;
+}
+
+body {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  display: flex;
+  width: 350px;
+}
+
+.logo img {
+  margin-top: 15px;
+  max-width: 30%;
+  height: 30%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.sloganText {
+  text-align: justify;
+  line-height: 150%;
+  font-size: 60px;
+  margin: auto;
+  width: 75%;
+  margin-top: 100px;
+  margin-bottom: 325px;
+  font-weight: 300;
+}
+
+.vidGallery {
+  margin: auto;
+}
+
+.vidRow {
+  margin-bottom: 15px;
+}
+
+.vidColLeft {
+  width: 35vw;
+  margin-right: 10px;
+}
+
+.vidColRight {
+  width: 35vw;
+  margin-left: 10px;
 }
