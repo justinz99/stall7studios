@@ -1,12 +1,12 @@
-import logo from './images/stall7logo.png'
+import logo from '../images/logo192.png'
 import { NavLink } from 'react-router-dom'
 
 export default function Header() {
     return (
         <div className='header'>
-            <div className='logo'>
-                <img src={logo}  alt='header logo' />
+                <img src={logo} className='logo' alt='header logo' />
                 <h1>Stall7 Studios</h1>
+            <div>
             </div>
             <div className='nav'>
                 <NavLink to='/'>Home</NavLink>

@@ -6,8 +6,8 @@ export default function Home() {
 
 
     return (
-      <div className="App">
-                <h2 className="sloganText">Fuck bitches get money. Lorem ipsum yeah yeah doo doo. I fucked Sharaine and went to tell my bro.</h2>
+      <div className="Home">
+                <h2 className="sloganText">Visual Storytelling through creative visions.</h2>
         <div className="vidGallery">
             <div className="vidRow">
                 <img className="vidColLeft" src={thumb1} alt='header logo'></img>
