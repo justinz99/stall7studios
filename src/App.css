@@ -1,0 +1,72 @@
+* {
+  font-family: 'Signika', sans-serif;
+}
+
+body {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.header {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  display: flex;
+  width: 350px;
+}
+
+.logo img {
+  margin-top: 15px;
+  max-width: 30%;
+  height: 30%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.sloganText {
+  text-align: justify;
+  line-height: 150%;
+  font-size: 60px;
+  margin: auto;
+  width: 75%;
+  margin-top: 100px;
+  margin-bottom: 325px;
+  font-weight: 300;
+}
+
+.vidGallery {
+  margin: auto;
+}
+
+.vidRow {
+  margin-bottom: 15px;
+}
+
+.vidColLeft {
+  width: 35vw;
+  margin-right: 10px;
+}
+
+.vidColRight {
+  width: 35vw;
+  margin-left: 10px;
+}
