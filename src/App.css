@@ -83,3 +83,20 @@ body {
   width: 35vw;
   margin-left: 10px;
 }
+
+.crew {
+  display: flex;
+  border: 1px solid red;
+}
+
+.crew .description {
+  margin: 10px;
+}
+
+.profile-container {
+  border: 1px solid black;
+}
+
+.profile-container img {
+  width: 15rem;
+}

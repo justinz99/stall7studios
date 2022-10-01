@@ -4,10 +4,9 @@ import { NavLink } from 'react-router-dom'
 export default function Header() {
     return (
         <div className='header'>
-                <img src={logo} className='logo' alt='header logo' />
-                <h1>Stall7 Studios</h1>
-            <div>
-            </div>
+            <img src={logo} className='logo' alt='header logo' />
+            <h1>Stall7 Studios</h1>
+            
             <div className='nav'>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/work'>work</NavLink>
