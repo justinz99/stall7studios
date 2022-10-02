@@ -2,6 +2,22 @@
   font-family: 'Signika', sans-serif;
 }
 
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #8f6894;
+}
+
+a:active {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 body {
   max-width: 90vw;
   margin-left: auto;
@@ -89,14 +105,20 @@ body {
   border: 1px solid red;
 }
 
-.crew .description {
-  margin: 10px;
+.crew-pic {
+  max-width: 55vw;
+  height: fit-content;
 }
 
-.profile-container {
+.crew .description {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.profile-card {
   border: 1px solid black;
 }
 
-.profile-container img {
+.profile-card img {
   width: 15rem;
 }
