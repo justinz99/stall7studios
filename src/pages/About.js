@@ -1,23 +1,19 @@
-import { useState } from 'react';
-import {jzInfo, bfInfo, studioBio} from '../texts'
-import crew from '../images/crew.jpg'
+// import { useState } from 'react';
+import {jzInfo, bfInfo, cvInfo, sdInfo, studioBio} from '../texts'
+
 
 export default function About() {
-  const [profileOpen, toggleProfileOpen] = useState(false)
 
   return (
     <div className='crew'>
-      <img src={crew} className='crew-pic' alt='everybody' />
-
-      {profileOpen && <ProfileCard person={jzInfo}/>}
+      <ProfileCard person={jzInfo}/>
+      <ProfileCard person={bfInfo}/>
+      <ProfileCard person={cvInfo}/>
+      <ProfileCard person={sdInfo}/>
 
       <div className='description'>
         <p>{studioBio.intro}</p>
-        
         <p>{studioBio.mission}</p>
-        
-        <p>Click on any person to view individual details</p>
-        <button onClick={() => toggleProfileOpen((prevState) => (!prevState))}>temp person</button>
       </div>
     </div>
   );
