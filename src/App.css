@@ -133,15 +133,14 @@ body {
 
 /* works page */
 
-.works {
-  width: 80vw;
-}
+/* .videoCard {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+} */
 
-.videos-list {
-  display: flex;
-}
-
-.video-thumbnail {
-  width: 100px;
+.videos-thumbnail {
+  width: 100%;
   height: auto;
-}
+} 
+

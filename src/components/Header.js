@@ -12,7 +12,7 @@ export default function Header() {
             <h1>Stall7 Studios</h1>
             
             <div className='nav'>
-                <NavLink to='/' end style={activeStyle}>Home</NavLink>
+                <NavLink to='/' end style={activeStyle}>home</NavLink>
                 <NavLink to='/work' style={activeStyle}>work</NavLink>
                 <NavLink to='/about' style={activeStyle}>about</NavLink>
                 <NavLink to='/contact' style={activeStyle}>contact</NavLink>

@@ -1,24 +1,30 @@
-import { videos } from "../videos";
+import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { videos } from "../videos"
 
 export default function Work() {
-    
+
 
 
   return (
-    <div className='works'>
-      <h1>Work</h1>
-      <div className='videos-list'>
-        {videos.map(video => (<VideoCard video={video} key={video.id}/>))}
-      </div>
-    </div>
+    <Container>
+      {videos.map(video => (<VideoCard video={video} key={video.id}/>))}
+    </Container>
   );
 }
 
 const VideoCard = (props) => {
   const { id, title, thumbnail } = props.video
   return (
-    <div>
-      <img src={thumbnail} className='video-thumbnail' alt='video thumbnail' />
-    </div>
+    <Row>
+      <Col>
+        <Link to={`${id}`}>
+          <img src={thumbnail} className='videos-thumbnail' alt='video thumbnail' />
+        </Link>
+      </Col>
+      <Col>
+        <p>{title}</p>
+      </Col>
+    </Row>
   )
 }
