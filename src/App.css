@@ -133,14 +133,34 @@ body {
 
 /* works page */
 
-/* .videoCard {
-  width: 40vw;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .videos-thumbnail {
   width: 100%;
   height: auto;
 } 
 
+/* work detail page */
+
+.videoDetails-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+  border: 1px
+}
+
+.videoDetails-main {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.videoDetails-info {
+  border: 1px solid blue;
+}
+
+.videoDetails-BTS {
+  border: 1px solid red;
+  max-width: 100%;
+}
+
+.videoDetails-stills {
+  border: 1px solid yellow;
+}

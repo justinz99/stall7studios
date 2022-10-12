@@ -7,7 +7,7 @@ export default function Home() {
 
     return (
       <div className="Home">
-                <h2 className="sloganText">Visual Storytelling through creative visions.</h2>
+                <h2 className="sloganText">Our innovative approach to visual storytelling</h2>
         <div className="vidGallery">
             <div className="vidRow">
                 <img className="vidColLeft" src={thumb1} alt='header logo'></img>

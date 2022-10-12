@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { videos } from "../videos"
 
 export default function Work() {
-
+  
 
 
   return (
@@ -20,11 +20,10 @@ const VideoCard = (props) => {
       <Col>
         <Link to={`${id}`}>
           <img src={thumbnail} className='videos-thumbnail' alt='video thumbnail' />
+          <p>{title}</p>
         </Link>
       </Col>
-      <Col>
-        <p>{title}</p>
-      </Col>
+   
     </Row>
   )
 }

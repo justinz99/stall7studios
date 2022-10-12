@@ -13,6 +13,7 @@ export const videos = [
         id: 0,
         title: 'video 0',
         thumbnail: thumb1,
+        embedId: "_TOlvUMX1v0"
     },
     {
         id: 1,
