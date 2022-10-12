@@ -4,8 +4,6 @@ import { videos } from "../videos"
 
 export default function Work() {
   
-
-
   return (
     <Container>
       {videos.map(video => (<VideoCard video={video} key={video.id}/>))}
@@ -16,10 +14,10 @@ export default function Work() {
 const VideoCard = (props) => {
   const { id, title, thumbnail } = props.video
   return (
-    <Row>
-      <Col>
+    <Row className='works-row'>
+      <Col className='works-col' md='6'>
         <Link to={`${id}`}>
-          <img src={thumbnail} className='videos-thumbnail' alt='video thumbnail' />
+          <img src={thumbnail} className='works-thumbnail' alt='video thumbnail' />
           <p>{title}</p>
         </Link>
       </Col>

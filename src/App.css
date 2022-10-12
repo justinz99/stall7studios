@@ -32,18 +32,23 @@ body {
   align-items: center;
 }
 
-.logo {
-  max-width: 4rem;
-  height: auto;
-  display: block;
+.nav-logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav {
+.nav-logo img{
+  width: 7vw;
+  max-width: 69px;
+  height: auto;
+}
+
+.header-nav {
   display: flex;
   margin-left: auto;
 }
 
-.nav a {
+.header-nav a {
   margin: 10px;
   text-decoration: none;
 }
@@ -133,7 +138,15 @@ body {
 
 /* works page */
 
-.videos-thumbnail {
+.works-row {
+  margin-bottom: 2rem;
+}
+
+.works-col {
+  margin: auto;
+}
+
+.works-thumbnail {
   width: 100%;
   height: auto;
 } 
