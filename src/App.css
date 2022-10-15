@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Signika', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:visited {
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover {
+  color: #8f6894;
+}
+
+a:active {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+
+.header {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 4rem;
+  height: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* footer */
+
+.footer {
+  min-height: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.social {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright {
+  margin-top: 25px;
+  color: #8f8f8f;
+  font-weight: 300;
 }
+
+/* home page */
+
+.Home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.sloganText {
+  text-align: justify;
+  font-weight: 300;
+  /* line-height: 150%; */
+  font-size: 4rem;
+  margin: auto;
+  width: 75%;
+  margin-top: 10vh;
+  margin-bottom: 35vh;
+}
+
+.vidGallery {
+  margin: auto;
+}
+
+.vidRow {
+  margin-bottom: 15px;
+}
+
+.vidColLeft {
+  width: 35vw;
+  margin-right: 10px;
+}
+
+.vidColRight {
+  width: 35vw;
+  margin-left: 10px;
+}
+
+/* about page */
+
+.aboutPage {
+  display: flex;
+}
+
+.aboutRow {
+  align-self: center;
+}
+
+.aboutCol {
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.aboutCompanyText {
+  width: 50vw;
+}
+
+.aboutCompanyRow {
+  font-size: 25px;
+  margin: auto;
+  width: 70vw;
+}
+
+.crew .description {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.profile-card {
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+
+.profile-card img {
+  width: 12rem;
+  border-radius: 3px;
+}
+
+/* works page */
+
+/* .videoCard {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.videos-thumbnail {
+  width: 100%;
+  height: auto;
+} 
+
