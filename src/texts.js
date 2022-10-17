@@ -3,6 +3,17 @@ import cvImg from './images/ChrisVasquez.jpg'
 import jzImg from './images/JustinZhao.jpg'
 import sdImg from './images/SethDresbeck.jpg'
 
+// home page 
+export const slogans = 
+    [
+        'Our innovative approach to visual storytelling.', 3000, 
+        'We make cinematic videos.', 3000,
+        'Creative storytelling through visual ingenuity.', 3000,
+        'Boomshakalaka.', 3000,
+        'Hire us please', 3000
+    ]
+
+// about page
 export const studioBio = {
     intro: 'Stall7 Studios was founded in 2021 by three friends who share a common interest in telling stories. The main goal of our company is to produce high-quality films that can provide reassurance and happiness for people of all backgrounds.',
     mission: 'Our studio operates out of Portland, Oregon, and we film most of our videos here in the Pacific Northwest. If you would like to reach us for business inquiries, we would love to hear from you. Please reach us by clicking here and filling out the form with your message.'

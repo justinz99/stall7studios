@@ -1,35 +1,31 @@
-import { Col, Container, Row } from 'react-bootstrap';
-import thumb1 from '../images/stills/1.png'
-import thumb2 from '../images/stills/2.png'
-import thumb3 from '../images/stills/3.png'
-import thumb4 from '../images/stills/4.png'
+import { Col, Container, Row } from 'react-bootstrap'
+import { TypeAnimation } from 'react-type-animation'
+import { slogans } from '../texts';
 
 export default function Home() {
 
-
-
   return (
-    <Container className="Home">
-      <h2 className="sloganText">Our innovative approach to visual storytelling</h2>
-      <Container className="vidGallery">
-        <Row className="vidRow">
-          <Col>
-          <img className="vidColLeft" src={thumb1} alt='header logo'></img>
-          </Col>
-          <Col>
-          <img className="vidColRight" src={thumb2} alt='header logo'></img>
-          </Col>
-        </Row>
-        <Row className="vidRow">
-          <Col>
-          <img className="vidColLeft" src={thumb3} alt='header logo'></img>
-          </Col>
-          <Col>
-          <img className="vidColRight" src={thumb4} alt='header logo'></img>
-          </Col>
-        </Row>
-      </Container>
+    <Container className="home">
+      <TypeAnimation sequence={slogans} className='home-sloganText' wrapper='h1' speed={20} repeat={Infinity} cursor={false}/>
+      <Row className="home-vidRow">
+        <Col sm='4'>
+          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+        </Col>
+        <Col>
+          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+        </Col>
+      </Row>
+      <Row className="home-vidRow">
+        <Col sm='5'>
+          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+        </Col>
+        <Col>
+          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+        </Col>
+      </Row>
     </Container>
   );
 }
+
+
 

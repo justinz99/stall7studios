@@ -1,5 +1,6 @@
 * {
   font-family: 'Signika', sans-serif;
+  background-color: #fbf7f4;
 }
 
 a {
@@ -12,10 +13,6 @@ a:visited {
 
 a:hover {
   color: #8f6894;
-}
-
-a:active {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 body {
@@ -41,6 +38,7 @@ body {
   width: 7vw;
   max-width: 69px;
   height: auto;
+  margin-right: 1rem;
 }
 
 .header-nav {
@@ -69,46 +67,50 @@ body {
 
 .copyright {
   margin-top: 25px;
+  margin-bottom: 2rem;
   color: #8f8f8f;
   font-weight: 300;
 }
 
 /* home page */
 
-.Home {
+.home {
   position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.sloganText {
-  text-align: justify;
+.home-sloganText {
   font-weight: 300;
   /* line-height: 150%; */
   font-size: 4rem;
-  margin: auto;
-  width: 75%;
+  margin: 0;
+  width: 80vw;
+  height: 20vh;
   margin-top: 10vh;
   margin-bottom: 35vh;
 }
 
-.vidGallery {
-  margin: auto;
+.home-sloganText::after {
+  content: '|';
+  animation: sloganCursor 2s infinite step-start;
 }
 
-.vidRow {
-  margin-bottom: 15px;
+@keyframes sloganCursor {
+  50% {
+    opacity: 0;
+  }
 }
 
-.vidColLeft {
-  width: 35vw;
-  margin-right: 10px;
+.home-vidRow {
+  margin-bottom: 1rem;
 }
 
-.vidColRight {
-  width: 35vw;
-  margin-left: 10px;
+.home-vidThumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* about page */
@@ -150,6 +152,10 @@ body {
   width: 100%;
   height: auto;
 } 
+
+.works-thumbnail:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 
 /* work detail page */
 

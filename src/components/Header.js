@@ -11,15 +11,13 @@ export default function Header() {
         <Navbar className='header' expand='lg'>
             <Navbar.Brand href='/' className='nav-logo'>
                 <img src={logo} alt='header logo' />
-                <h1>Stall7 Studios</h1>
+                <h2>Stall7 Studios</h2>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
                 <Nav className='header-nav'>
-                    <NavLink to='/' end style={activeStyle}>home</NavLink>
                     <NavLink to='/work' style={activeStyle}>work</NavLink>
                     <NavLink to='/about' style={activeStyle}>about</NavLink>
-                    <NavLink to='/contact' style={activeStyle}>contact</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
