@@ -1,5 +1,6 @@
 * {
   font-family: 'Signika', sans-serif;
+  background-color: #fbf7f4;
 }
 
 a {
@@ -12,10 +13,6 @@ a:visited {
 
 a:hover {
   color: #8f6894;
-}
-
-a:active {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 body {
@@ -32,18 +29,24 @@ body {
   align-items: center;
 }
 
-.logo {
-  max-width: 4rem;
-  height: auto;
-  display: block;
+.nav-logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav {
+.nav-logo img{
+  width: 7vw;
+  max-width: 69px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.header-nav {
   display: flex;
   margin-left: auto;
 }
 
-.nav a {
+.header-nav a {
   margin: 10px;
   text-decoration: none;
 }
@@ -64,71 +67,62 @@ body {
 
 .copyright {
   margin-top: 25px;
+  margin-bottom: 2rem;
   color: #8f8f8f;
   font-weight: 300;
 }
 
 /* home page */
 
-.Home {
+.home {
   position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.sloganText {
-  text-align: justify;
+.home-sloganText {
   font-weight: 300;
   /* line-height: 150%; */
   font-size: 4rem;
-  margin: auto;
-  width: 75%;
+  margin: 0;
+  width: 80vw;
+  height: 20vh;
   margin-top: 10vh;
   margin-bottom: 35vh;
 }
 
-.vidGallery {
-  margin: auto;
+.home-sloganText::after {
+  content: '|';
+  animation: sloganCursor 2s infinite step-start;
 }
 
-.vidRow {
-  margin-bottom: 15px;
+@keyframes sloganCursor {
+  50% {
+    opacity: 0;
+  }
 }
 
-.vidColLeft {
-  width: 35vw;
-  margin-right: 10px;
+.home-vidRow {
+  margin-bottom: 1rem;
 }
 
-.vidColRight {
-  width: 35vw;
-  margin-left: 10px;
+.home-vidThumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* about page */
 
-.aboutPage {
+.crew {
   display: flex;
+  border: 1px solid red;
 }
 
-.aboutRow {
-  align-self: center;
-}
-
-.aboutCol {
-  text-align: center;
-  border-radius: 1rem;
-}
-
-.aboutCompanyText {
-  width: 50vw;
-}
-
-.aboutCompanyRow {
-  font-size: 25px;
-  margin: auto;
-  width: 70vw;
+.crew-pic {
+  max-width: 55vw;
+  height: fit-content;
 }
 
 .crew .description {
@@ -137,25 +131,55 @@ body {
 }
 
 .profile-card {
- margin-top: 1rem;
- margin-bottom: 1rem;
+  border: 1px solid black;
 }
 
 .profile-card img {
-  width: 12rem;
-  border-radius: 3px;
+  width: 15rem;
 }
 
 /* works page */
 
-/* .videoCard {
-  width: 40vw;
-  margin-left: auto;
-  margin-right: auto;
-} */
+.works-row {
+  margin-bottom: 2rem;
+}
 
-.videos-thumbnail {
+.works-col {
+  margin: auto;
+}
+
+.works-thumbnail {
   width: 100%;
   height: auto;
 } 
 
+.works-thumbnail:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* work detail page */
+
+.videoDetails-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+  border: 1px
+}
+
+.videoDetails-main {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.videoDetails-info {
+  border: 1px solid blue;
+}
+
+.videoDetails-BTS {
+  border: 1px solid red;
+  max-width: 100%;
+}
+
+.videoDetails-stills {
+  border: 1px solid yellow;
+}

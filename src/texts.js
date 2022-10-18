@@ -3,6 +3,17 @@ import cvImg from './images/ChrisVasquez.jpg'
 import jzImg from './images/JustinZhao.jpg'
 import sdImg from './images/SethDresbeck.jpg'
 
+// home page 
+export const slogans = 
+    [
+        'Our innovative approach to visual storytelling.', 3000, 
+        'We make cinematic videos.', 3000,
+        'Creative storytelling through visual ingenuity.', 3000,
+        'Boomshakalaka.', 3000,
+        'Hire us please', 3000
+    ]
+
+// about page
 export const studioBio = {
     intro: 'Stall7 Studios was founded in 2021 by three friends who share a common interest in telling stories. The main goal of our company is to produce high-quality films that can provide reassurance and happiness for people of all backgrounds.',
     mission: 'Our studio operates out of Portland, Oregon, and we film most of our videos here in the Pacific Northwest. If you would like to reach us for business inquiries, we would love to hear from you. Please reach us by clicking here and filling out the form with your message.'
@@ -21,7 +32,7 @@ export const cvInfo = {
     pic: cvImg,
     title: 'erector',
     insta: 'playboy',
-    bio: 'he\'s mexican and black bro. RIGGER REIGGHSJADHJKSA DHKJASD'
+    bio: 'he\'s mexican and black bro.'
 }
 
 export const jzInfo = {
@@ -40,8 +51,4 @@ export const sdInfo = {
     bio: 'bruh.'
 }
 
-export const companyInfo = {
-    p1: 'Stall7 started with three friends with a passion for storytelling. Our goal is to deliver unique moving images that fit the goals of our clients while inpiring the audience. ',
-    p2: 'Some statements about our processes. We attempt to do so by paying attention in life, and ask a lot of questions. '
-}
 
