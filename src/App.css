@@ -39,6 +39,7 @@ body {
   max-width: 69px;
   height: auto;
   margin-right: 1rem;
+  margin-bottom: .75rem;
 }
 
 .header-nav {
@@ -169,6 +170,17 @@ body {
 .videoDetails-main {
   align-self: center;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .videoDetails-main {
+    max-width: 100%;
+    height: auto;
+  }
+  .videoDetails-container {
+    max-width: 100vw;
+
+  }
 }
 
 .videoDetails-info {
