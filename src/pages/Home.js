@@ -1,6 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import { TypeAnimation } from 'react-type-animation'
 import { slogans } from '../texts';
+import wyattThumb from '../images/videoThumbnails/wyattThumb.jpg'
+import gannonThumb from '../images/videoThumbnails/gannonThumb.jpg'
+import depThumb from '../images/videoThumbnails/depThumb.jpg'
 
 export default function Home() {
 
@@ -8,19 +11,18 @@ export default function Home() {
     <Container className="home">
       <TypeAnimation sequence={slogans} className='home-sloganText' wrapper='h1' speed={20} repeat={Infinity} cursor={false}/>
       <Row className="home-vidRow">
-        <Col sm='4'>
-          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
-        </Col>
         <Col>
-          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+          <img src={wyattThumb} alt="home thumbnailplaceholder" className='home-vidThumbnail' />
         </Col>
       </Row>
       <Row className="home-vidRow">
-        <Col sm='5'>
-          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
-        </Col>
         <Col>
-          <img src='https://via.placeholder.com/2000x1000' alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+          <img src={gannonThumb} alt="home thumbnailplaceholder" className='home-vidThumbnail' />
+        </Col>
+      </Row>
+      <Row className="home-vidRow">
+        <Col>
+          <img src={depThumb} alt="home thumbnailplaceholder" className='home-vidThumbnail' />
         </Col>
       </Row>
     </Container>
