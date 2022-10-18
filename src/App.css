@@ -116,17 +116,16 @@ body {
 
 /* about page */
 
-.crew {
+.about-crew {
   display: flex;
   border: 1px solid red;
 }
 
-.crew-pic {
-  max-width: 55vw;
-  height: fit-content;
+.about-col {
+ display: flex;
 }
 
-.crew .description {
+.about-studioBio {
   margin: 20px;
   font-size: 1.2rem;
 }
@@ -135,8 +134,11 @@ body {
   border: 1px solid black;
 }
 
-.profile-card img {
-  width: 15rem;
+.about-headshot {
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
+  padding: 0 .25rem;
 }
 
 /* works page */

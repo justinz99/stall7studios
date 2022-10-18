@@ -8,16 +8,11 @@ export const slogans =
     [
         'Our innovative approach to visual storytelling.', 3000, 
         'We make cinematic videos.', 3000,
-        'Creative storytelling through visual ingenuity.', 3000,
-        'Boomshakalaka.', 3000,
-        'Hire us please', 3000
+        'Creative storytelling through visual ingenuity.', 3000
     ]
 
 // about page
-export const studioBio = {
-    intro: 'Stall7 Studios was founded in 2021 by three friends who share a common interest in telling stories. The main goal of our company is to produce high-quality films that can provide reassurance and happiness for people of all backgrounds.',
-    mission: 'Our studio operates out of Portland, Oregon, and we film most of our videos here in the Pacific Northwest. If you would like to reach us for business inquiries, we would love to hear from you. Please reach us by clicking here and filling out the form with your message.'
-}
+export const studioBio = 'We love stories. We love hearing them, watching them, and living them. \n We are all explorers of the world, the mind and our craft. \nThese are the foundations of Stall7. \nEverybody’s got a story to tell. \nOur drive to create them is ambitious. Music videos, documentaries, commercials, and feature films! \nFor us, there is no greater joy than the opportunity to materialize your ideas and moments, that\’s why we want to tell your story.' 
 
 export const bfInfo = {
     name: 'Brandon Foreman',
