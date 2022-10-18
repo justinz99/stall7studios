@@ -5,7 +5,7 @@ export const videos = [
     {
         id: 7,
         title: 'Fitness Spec Ad | BMPCC 6K + Sigma 18-35',
-        thumbnail: 'https://via.placeholder.com/2000x1000',
+        thumbnail: 'https://i9.ytimg.com/vi/ApdtAa03uQE/maxresdefault.jpg?time=1666057500000&sqp=CJyKuJoG&rs=AOn4CLDQQxWLJmIs7YBb9cqzzFffht7IZw',
         embedId: 'ApdtAa03uQE'
     },
     {

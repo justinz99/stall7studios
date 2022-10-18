@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import { jzInfo, bfInfo, cvInfo, sdInfo, studioBio, companyInfo } from '../texts'
+import { jzInfo, bfInfo, cvInfo, sdInfo, studioBio } from '../texts'
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
@@ -32,7 +32,6 @@ export default function About() {
       </Container>
       <Container className='aboutCompanyGrid'>
         <Row className='aboutCompanyRow'>
-          <Col className='aboutCompanyText'><p>{companyInfo.p1}</p><p>{companyInfo.p2}</p></Col>
         </Row>
       </Container>
     </div>
