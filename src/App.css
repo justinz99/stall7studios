@@ -90,7 +90,7 @@ body {
   width: 80vw;
   height: 20vh;
   margin-top: 10vh;
-  margin-bottom: 35vh;
+  margin-bottom: 20vh;
 }
 
 .home-sloganText::after {
@@ -156,6 +156,10 @@ body {
   height: auto;
 } 
 
+.works-title {
+  text-align: center;
+}
+
 .works-thumbnail:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -187,6 +191,10 @@ body {
 
 .videoDetails-info {
   border: 1px solid blue;
+}
+
+.videoDetails-info ul{
+  list-style: none;
 }
 
 .videoDetails-BTS {
