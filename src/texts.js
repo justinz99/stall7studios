@@ -15,6 +15,7 @@ export const slogans =
 export const studioBio = 'We love stories. We love hearing them, watching them, and living them. \n We are all explorers of the world, the mind and our craft. \nThese are the foundations of Stall7. \nEverybody’s got a story to tell. \nOur drive to create them is ambitious. Music videos, documentaries, commercials, and feature films! \nFor us, there is no greater joy than the opportunity to materialize your ideas and moments, that\’s why we want to tell your story.' 
 
 export const bfInfo = {
+    id: 'bf',
     name: 'Brandon Foreman',
     pic: bfImg,
     title: 'prodicker',
@@ -23,6 +24,7 @@ export const bfInfo = {
 }
 
 export const cvInfo = {
+    id: 'cv',
     name: 'Chris Vasquez',
     pic: cvImg,
     title: 'erector',
@@ -31,6 +33,7 @@ export const cvInfo = {
 }
 
 export const jzInfo = {
+    id: 'jz',
     name: 'Justin Zhao',
     pic: jzImg,
     title: 'creative erector',
@@ -39,6 +42,7 @@ export const jzInfo = {
 }
 
 export const sdInfo = {
+    id: 'sd',
     name: 'Seth Dresbeck',
     pic: sdImg,
     title: 'pov',

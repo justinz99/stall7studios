@@ -116,26 +116,34 @@ body {
 
 /* about page */
 
-.about-crew {
+.about-container {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.about-col {
+.about-crewCol {
  display: flex;
 }
 
-.about-studioBio {
-  margin: 20px;
-  font-size: 1.2rem;
+.about-studioBioCol {
+  margin-right: 2rem;
+  padding: 3rem .75rem;
+  font-size: 1.2em;
+  /* border: 1px solid blue; */
+}
+
+.about-crew {
+  display: flex;
+  margin-left: 20%;
 }
 
 .profile-card {
   border: 1px solid black;
+  display: flex;
 }
 
 .about-headshot {
-  width: 50%;
+  width: 5rem;
   height: 50vh;
   object-fit: cover;
   padding: 0 .25rem;
