@@ -5,29 +5,23 @@ import { jzInfo, bfInfo, cvInfo, sdInfo, studioBio } from '../texts'
 
 export default function About() {
   const [profileOpen, setProfileOpen] = useState(null)
+  const [selectedProfile, setSelectedProfile] = useState('')
 
-  const toggleProfileOpen = (profile) => {
-    if (profileOpen === profile) {
-      return setProfileOpen(null)
+  const toggleProfile = (profile) => (e) => {
+    console.log(profile)
+    if(selectedProfile === profile){
+      setSelectedProfile('')
+    }else{
+      setSelectedProfile(profile)
     }
-    setProfileOpen(profile)
   }
 
-  const styles = useSpring({
-    from: { width: '5rem' },
-    to: { width: '10rem' }
+  const profileStyle = (profile) => ({
+    width:selectedProfile===profile? '10rem':'5rem',
+    transition:'1s'
   })
 
-  function ProfileCard(props) {
-    const { id, name, pic, title, insta, bio } = props.person
-    const animStyles = profileOpen === id ? props.styles : null 
 
-    return (
-      <animated.div className='profile-card' onClick={() => props.toggle(id)} style={animStyles}>
-        <img src={pic} alt='headshot' className='about-headshot' />
-      </animated.div>
-    )
-  }
   
   return (
     <div className='aboutPage'>
@@ -38,10 +32,18 @@ export default function About() {
           </Col> */}
           <Col className='about-crewCol'>
             <div className='about-crew'>
-              <ProfileCard person={jzInfo} toggle={toggleProfileOpen} styles={styles} />
-              <ProfileCard person={bfInfo} toggle={toggleProfileOpen} styles={styles} />
-              <ProfileCard person={cvInfo} toggle={toggleProfileOpen} styles={styles} />
-              <ProfileCard person={sdInfo} toggle={toggleProfileOpen} styles={styles} />
+              <div className='profile-card' onClick={toggleProfile('jz')} style={profileStyle('jz')}>
+                <img src={jzInfo.pic} alt='headshot' className='about-headshot' />
+              </div>
+              <div className='profile-card' onClick={toggleProfile('bf')}  style={profileStyle('bf')}>
+                <img src={bfInfo.pic} alt='headshot' className='about-headshot' />
+              </div>
+              <div className='profile-card' onClick={toggleProfile('cv')}  style={profileStyle('cv')}>
+                <img src={cvInfo.pic} alt='headshot' className='about-headshot' />
+              </div>
+              <div className='profile-card' onClick={toggleProfile('sd')}  style={profileStyle('sd')}>
+                <img src={sdInfo.pic} alt='headshot' className='about-headshot' />
+              </div>
             </div>
           </Col>
         </Row>
