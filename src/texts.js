@@ -4,50 +4,50 @@ import jzImg from './images/JustinZhao.jpg'
 import sdImg from './images/SethDresbeck.jpg'
 
 // home page 
-export const slogans = 
+export const slogans =
     [
-        'Our innovative approach to visual storytelling.', 3000, 
+        'Our innovative approach to visual storytelling.', 3000,
         'We make cinematic videos.', 3000,
         'Creative storytelling through visual ingenuity.', 3000
     ]
 
 // about page
-export const studioBio = 'We love stories. We love hearing them, watching them, and living them. \n We are all explorers of the world, the mind and our craft. \nThese are the foundations of Stall7. \nEverybody’s got a story to tell. \nOur drive to create them is ambitious. Music videos, documentaries, commercials, and feature films! \nFor us, there is no greater joy than the opportunity to materialize your ideas and moments, that\’s why we want to tell your story.' 
+export const studioBio = 
+`We love stories. We love hearing them, watching them, and living them. We are all explorers of the world, the mind and our craft. These are the foundations of Stall7. 
+ Everybody’s got a story to tell. Our drive to create them is ambitious. Music videos, documentaries, commercials, and feature films! 
+ For us, there is no greater joy than the opportunity to materialize your ideas and moments, that’s why we want to tell your story.`
 
-export const bfInfo = {
-    id: 'bf',
-    name: 'Brandon Foreman',
-    pic: bfImg,
-    title: 'prodicker',
-    insta: 'bfore_man',
-    bio: 'he\'s our drone guy, and he cannot wait to finish his degree at OSU.'
-}
-
-export const cvInfo = {
-    id: 'cv',
-    name: 'Chris Vasquez',
-    pic: cvImg,
-    title: 'erector',
-    insta: 'playboy',
-    bio: 'he\'s mexican and black bro.'
-}
-
-export const jzInfo = {
-    id: 'jz',
-    name: 'Justin Zhao',
-    pic: jzImg,
-    title: 'creative erector',
-    insta: 'justinzzhao',
-    bio: 'likes to vibe to Kendrick while driving on the highway.'
-}
-
-export const sdInfo = {
-    id: 'sd',
-    name: 'Seth Dresbeck',
-    pic: sdImg,
-    title: 'pov',
-    insta: 'champagnepapi',
-    bio: 'bruh.'
-}
-
-
+export const crewInfo = [
+    {
+        name: 'Brandon Foreman',
+        pic: bfImg,
+        title: 'Producer / Drone Op',
+        insta: 'bfore_man',
+        email: 'brandeeto23@gmail.com',
+        bio: "I am a video producer and tech savvy indivual. I am currently majoring in computer science with one of my first projects being this very website! When I'm not working, you can find me skiing or 3D printing."
+    },
+    {
+        name: 'Chris Vasquez',
+        pic: cvImg,
+        title: 'Director / Writer',
+        insta: 'tiopancho14',
+        email: '',
+        bio: "I am a director, writer, and portrait photographer. I was born in Santa Ana where I discovered my passion for film. In my free time I organize songs into playlists for every moment and mood."
+    }, 
+    {
+        name: 'Justin Zhao',
+        pic: jzImg,
+        title: 'Creative Director / Stills',
+        insta: 'justinzzhao',
+        email: 'justinzhao1999@gmail.com',
+        bio: "I joined Stall7 in 2022 after obtaining my B.A. in Photo/Media, I like to drive around town while listening to music."
+    }, 
+    {
+        name: 'Seth Dresbeck',
+        pic: sdImg,
+        title: 'Cinematographer / Editor',
+        insta: 'sethdrez',
+        email: 'sdresbeck@gmail.com',
+        bio: "I am a camera enthusiast and part-time model. I am currently attending school for my bachelors in business. Being from Oregon, I am no stranger to hiking and snowboarding."
+    }
+]

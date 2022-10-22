@@ -1,5 +1,5 @@
 * {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Dosis', sans-serif;
   background-color: #fbf7f4;
 }
 
@@ -118,7 +118,6 @@ body {
 
 .about-container {
   display: flex;
-  /* border: 1px solid red; */
 }
 
 .about-crewCol {
@@ -126,27 +125,41 @@ body {
 }
 
 .about-studioBioCol {
-  margin-right: 2rem;
   padding: 3rem .75rem;
   font-size: 1.2em;
-  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-footNote {
+  font-size: 0.8em;
+  color: #8080809f;
 }
 
 .about-crew {
   display: flex;
-  margin-left: 20%;
+  /* margin-left: 20%; */
+  max-width: 50vw;
 }
 
-.profile-card {
-  border: 1px solid black;
+.about-profileCard {
   display: flex;
+
 }
 
 .about-headshot {
-  width: 5rem;
+  width: 100%;
   height: 50vh;
   object-fit: cover;
+  cursor: pointer;
   padding: 0 .25rem;
+}
+
+.about-cardInfo {
+  padding: 100px 10px 0 20px;
+  width: 20vw;
+
 }
 
 /* works page */
