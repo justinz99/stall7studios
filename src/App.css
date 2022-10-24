@@ -1,5 +1,5 @@
 * {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Dosis', sans-serif;
   background-color: #fbf7f4;
 }
 
@@ -116,27 +116,71 @@ body {
 
 /* about page */
 
-.crew {
+
+
+
+
+.about-container {
   display: flex;
-  border: 1px solid red;
+  justify-content: space-between;
 }
 
-.crew-pic {
-  max-width: 55vw;
-  height: fit-content;
+.about-crewCol {
+  display: flex;
 }
 
-.crew .description {
-  margin: 20px;
-  font-size: 1.2rem;
+.about-studioBioCol {
+  padding: 3rem .75rem;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.profile-card {
-  border: 1px solid black;
+.about-footNote {
+  font-size: 0.8em;
+  color: #8080809f;
 }
 
-.profile-card img {
-  width: 15rem;
+.about-crewContainer {
+  display: block;
+}
+
+.about-crewContainer-bigScreen {
+  display: flex;
+  align-items: center;
+  max-width: 50vw;
+  max-height: 60vh;
+  /* border: 1px solid black; */
+}
+
+.about-profileCard {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.about-headshot {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.about-headshot-bigScreen {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.about-cardInfo {
+  padding: 20px;
+  width: 40vw;
+}
+
+.about-cardInfo-bigScreen {
+  padding: 0 10px;
+  width: 20vw;
 }
 
 /* works page */

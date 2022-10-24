@@ -5,21 +5,16 @@ import { useSpring, animated } from 'react-spring'
 import { videos } from "../videos"
 
 export default function Work() {
-
-
+  
   const VideoCard = (props) => {
     const { id, title, thumbnail } = props.video
-
     const [onHover, setOnHover] = useState(false)
-
     const styles = useSpring({ 
       transform: onHover ? 'scale(1.03)' : 'scale(1)'
     })
-
     const toggleHover = () => {
       setOnHover(!onHover)
     }
-
 
     return (
       <Row className='works-row'>

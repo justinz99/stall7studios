@@ -1,43 +1,108 @@
-// import { useState } from 'react';
-import { jzInfo, bfInfo, cvInfo, sdInfo, studioBio } from '../texts'
-import { Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+import { useEffect, useRef, useState } from 'react';
+import { animated, useSprings } from 'react-spring';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { crewInfo, studioBio } from '../texts'
+import { useMediaQuery } from '@mui/material';
 
 
 export default function About() {
+  const isBigScreen = useMediaQuery('(min-width: 576px)')
+
+  useEffect(() => {
+    console.log(isBigScreen)
+  }, [isBigScreen])
+
+  const studioBioParagraph = (studioBio) => {
+    return studioBio.split('\n').map((line) => (<p key={line.length}>{line}</p>))
+  }
+
+  const staticStyles = {
+    crewContainer: 'about-crewContainer',
+    headshot: 'about-headshot',
+    cardInfo: 'about-cardInfo'
+  }
+
+  const bigScreenStatictyles = {
+    crewContainer: 'about-crewContainer-bigScreen',
+    headshot: 'about-headshot-bigScreen',
+    cardInfo: 'about-cardInfo-bigScreen',
+  }
 
   return (
-
     <div className='aboutPage'>
-      <Container className='crew'>
-        <Row className='aboutRow'>
-          <Col lg={6} className='aboutCol'><ProfileCard person={jzInfo} /></Col>
-          <Col lg={6} className='aboutCol'><ProfileCard person={bfInfo} /></Col>
-        </Row>
-        <Row className='aboutRow'>
-          <Col lg={6} className='aboutCol'><ProfileCard person={cvInfo} /></Col>
-          <Col lg={6} className='aboutCol'><ProfileCard person={sdInfo} /></Col>
-        </Row>
-      </Container>
-      <Container className='aboutCompanyGrid'>
-        <Row className='aboutCompanyRow'>
+      <Container className='about-container' fluid>
+        <Row>
+          <Col className='about-studioBioCol' sm={3}>
+            {studioBioParagraph(studioBio)}
+            <small className='about-footNote'>Website built by Brandon and Justin</small>
+          </Col>
+          <Col className='about-crewCol'>
+            <ProfileCard crew={crewInfo} styles={ isBigScreen ? bigScreenStatictyles : staticStyles}/>
+          </Col>
         </Row>
       </Container>
     </div>
   );
 }
 
-const ProfileCard = (props) => {
-  const { name, pic, title, insta, bio } = props.person
+function ProfileCard(props) {
+  const [profileOpen, setProfileOpen] = useState(null)
+  const lastProfileOpen = useRef(null)
 
+  const toggleProfileOpen = (profile) => {
+    if (profileOpen === profile) {
+      return setProfileOpen(null)
+    }
+    setProfileOpen(profile)
+  }
+
+  useEffect(() => {
+    lastProfileOpen.current = profileOpen
+  }, [profileOpen])
+
+  const handleClick = (profile) => {
+    toggleProfileOpen(profile)
+    setSprings.start(animatedStyles(profile))
+  }
+
+  const animatedStyles = (targetProfile) => profile =>
+    targetProfile === profile
+      ?
+      { to: { width: '10rem', scale: 1.2, display: 'block', opacity: 1, y: 0 }, config: { mass: 5, tension: 200, friction: 24 } }
+      : { to: { width: '5rem', scale: 0.8, display: 'none', opacity: 0, y: 100 }, config: { mass: 2, tension: 200, friction: 20 } }
+
+  const [springs, setSprings] = useSprings(
+    props.crew.length,
+    animatedStyles(profileOpen)
+  )
+  console.log(props.styles.crewContainer)
   return (
-    <div className='profile-card'>
-      <img src={pic} alt='headshot' />
-      <h3>{name}</h3>
-      <h4>{title}</h4>
-      {/* <p>{bio}</p> */}
-      {/* <a href={'https://instagram.com/' + insta}><i className="fa-brands fa-instagram fa-xl social" />@{insta}</a> */}
+    <div className={props.styles.crewContainer}>
+      {springs.map(({ width, scale, display, opacity, y }, i) => {
+        const { name, pic, title, insta, email, bio } = props.crew[i]
+        return (
+          <div
+            onClick={() => handleClick(i)}
+            key={i}
+            className='about-profileCard'
+          >
+            <animated.div style={{ width, overflow: 'hidden' }}>
+              <animated.img style={{ scale }} src={pic} alt='headshot' className={props.styles.headshot} />
+            </animated.div>
+            <animated.div style={{ display, opacity, transform: y.to(val => `translateY(${val}px)`) }} className={props.styles.cardInfo}>
+              <Card.Title>{name}</Card.Title>
+              <Card.Subtitle>{title}</Card.Subtitle>
+              <br />
+              <Card.Text>{bio}</Card.Text>
+
+              <Card.Text>
+                <a href={`https://www.instagram.com/${insta}`}><i className="fa-brands fa-instagram fa-xl" /></a>
+                <a href={`mailto: ${email}`}><i className="fa-solid fa-envelope fa-xl social"></i></a>
+              </Card.Text>
+            </animated.div>
+          </div>
+        )
+      })}
     </div>
   )
 }
