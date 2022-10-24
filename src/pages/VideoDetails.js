@@ -36,11 +36,15 @@ export default function VideoDetails() {
                     </ul>
                 </Col>
                 <Col xl={6}>
-                    <img src='https://via.placeholder.com/2000x1000' alt="bts placeholder" className='videoDetails-BTS' />
+                    <img src={require(`${video.stillsPath}1.jpg`)} alt="bts placeholder" className='videoDetails-BTS' />
+                    <p>{`${video.stillsPath}1.jpg`}</p>
                 </Col>    
             </Row>
             <Row className='videoDetails-stills'>
-                <p>grid of stills</p>
+               
+            </Row>
+            <Row className='videoDetails-stills'>
+                
             </Row>
         </Container>
     )
