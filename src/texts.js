@@ -40,7 +40,7 @@ export const crewInfo = [
         title: 'Creative Director / Stills',
         insta: 'justinzzhao',
         email: 'justinzhao1999@gmail.com',
-        bio: "I joined Stall7 in 2022 after obtaining my B.A. in Photo/Media, I like to drive around town while listening to music."
+        bio: "I joined Stall7 in 2022 after obtaining my B.A. in Photo/Media, I like to drive around town while listening to music. "
     }, 
     {
         name: 'Seth Dresbeck',
