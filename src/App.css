@@ -116,12 +116,17 @@ body {
 
 /* about page */
 
+
+
+
+
 .about-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .about-crewCol {
- display: flex;
+  display: flex;
 }
 
 .about-studioBioCol {
@@ -137,29 +142,45 @@ body {
   color: #8080809f;
 }
 
-.about-crew {
+.about-crewContainer {
+  display: block;
+}
+
+.about-crewContainer-bigScreen {
   display: flex;
-  /* margin-left: 20%; */
+  align-items: center;
   max-width: 50vw;
+  max-height: 60vh;
+  /* border: 1px solid black; */
 }
 
 .about-profileCard {
   display: flex;
-
+  align-items: center;
+  /* border: 1px solid red; */
 }
 
 .about-headshot {
   width: 100%;
   height: 50vh;
   object-fit: cover;
+}
+
+.about-headshot-bigScreen {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
   cursor: pointer;
-  padding: 0 .25rem;
 }
 
 .about-cardInfo {
-  padding: 100px 10px 0 20px;
-  width: 20vw;
+  padding: 20px;
+  width: 40vw;
+}
 
+.about-cardInfo-bigScreen {
+  padding: 0 10px;
+  width: 20vw;
 }
 
 /* works page */
