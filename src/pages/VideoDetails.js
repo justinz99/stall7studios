@@ -5,7 +5,6 @@ import { videos } from "../videos";
 export default function VideoDetails() {
     const { id } = useParams()
     const video = videos.find(target => target.id === parseInt(id))
-    console.log(video.id)
     return (
         <Container className='videoDetails-container'>
             <iframe
@@ -21,23 +20,10 @@ export default function VideoDetails() {
             <Row>
                 <Col className='videoDetails-info' xl={6}>
                     <p>{video.description}</p>
-                    <h4>Credits</h4>
-                    <ul>
-                        <li>Director: Chris Vasquez</li>
-                        <li>Editor: Chris Vasquez</li>
-                        <li>Camera: Seth Dresbeck</li>
-                        <li>Stills: Justin Zhao</li>
-                    </ul>
-
-                    <h4>Equipment</h4>
-                    <ul>
-                        <li>Black Magic Pocket Cinema Camera 6K</li>
-                        <li>Fujifilm X-T3</li>
-                    </ul>
                 </Col>
                 <Col xl={6}>
-                    <img src={require(`${video.stillsPath}1.jpg`)} alt="bts placeholder" className='videoDetails-BTS' />
-                    <p>{`${video.stillsPath}1.jpg`}</p>
+                    <img src={process.env.PUBLIC_URL + `${video.stillsPath}1.jpg`} alt="bts-still" className='videoDetails-BTS' />
+                    
                 </Col>    
             </Row>
             <Row className='videoDetails-stills'>
