@@ -116,17 +116,9 @@ body {
 
 /* about page */
 
-
-
-
-
 .about-container {
   display: flex;
   justify-content: space-between;
-}
-
-.about-crewCol {
-  display: flex;
 }
 
 .about-studioBioCol {
@@ -135,6 +127,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.about-crewCol {
+  display: flex;
+  margin-left: 2rem;
 }
 
 .about-footNote {
@@ -215,8 +212,10 @@ body {
   border: 1px
 }
 
-.videoDetails-main {
-  align-self: center;
+.videoDetails-mainVideo {
+  /* align-self: center; */
+  max-width: 100%;
+  max-height: auto;
   margin-bottom: 2rem;
 }
 

@@ -24,16 +24,17 @@ export default function VideoDetails() {
 
     return (
         <Container className='videoDetails-container'>
-            <iframe
-                className='videoDetails-main'
-                width="1120" 
-                height="630" 
-                src={`https://www.youtube.com/embed/${video.embedId}`} 
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen 
-            />
+            <Col>
+                <iframe
+                    className='videoDetails-mainVideo'
+                    width="2240" 
+                    height="630" 
+                    src={`https://www.youtube.com/embed/${video.embedId}`} 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture fullscreen" 
+                    allowFullScreen 
+                    />
+            </Col>
             <Row>
                 <Col className='videoDetails-info' sm={6}>
                     <p>{video.description}</p>

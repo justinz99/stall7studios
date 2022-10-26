@@ -19,18 +19,20 @@ export default function About() {
   const staticStyles = {
     crewContainer: 'about-crewContainer',
     headshot: 'about-headshot',
-    cardInfo: 'about-cardInfo'
+    cardInfo: 'about-cardInfo',
+    animatedWidth: '15vw'
   }
 
   const bigScreenStatictyles = {
     crewContainer: 'about-crewContainer-bigScreen',
     headshot: 'about-headshot-bigScreen',
     cardInfo: 'about-cardInfo-bigScreen',
+    animatedWidth: '20vw'
   }
 
   return (
     <div className='aboutPage'>
-      <Container className='about-container' fluid>
+      <Container fluid>
         <Row>
           <Col className='about-studioBioCol' sm={3}>
             {studioBioParagraph(studioBio)}
@@ -51,7 +53,7 @@ function ProfileCard(props) {
 
   const toggleProfileOpen = (profile) => {
     if (profileOpen === profile) {
-      return setProfileOpen(null)
+      setProfileOpen(null)
     }
     setProfileOpen(profile)
   }
@@ -68,18 +70,17 @@ function ProfileCard(props) {
   const animatedStyles = (targetProfile) => profile =>
     targetProfile === profile
       ?
-      { to: { width: '10rem', scale: 1.2, display: 'block', opacity: 1, y: 0 }, config: { mass: 5, tension: 200, friction: 24 } }
-      : { to: { width: '5rem', scale: 0.8, display: 'none', opacity: 0, y: 100 }, config: { mass: 2, tension: 200, friction: 20 } }
+      { to: { width: props.styles.animatedWidth, scale: 1.2, display: 'block', opacity: 1, y: 0 }, config: { mass: 5, tension: 200, friction: 24 } }
+      : { to: { width: '7vw', scale: 0.8, display: 'none', opacity: 0, y: 100 }, config: { mass: 2, tension: 200, friction: 20 } }
 
   const [springs, setSprings] = useSprings(
     props.crew.length,
     animatedStyles(profileOpen)
   )
-  console.log(props.styles.crewContainer)
   return (
     <div className={props.styles.crewContainer}>
       {springs.map(({ width, scale, display, opacity, y }, i) => {
-        const { name, pic, title, insta, email, bio } = props.crew[i]
+        const { name, pic, title, insta, email, bio, extraLink } = props.crew[i]
         return (
           <div
             onClick={() => handleClick(i)}
@@ -94,10 +95,10 @@ function ProfileCard(props) {
               <Card.Subtitle>{title}</Card.Subtitle>
               <br />
               <Card.Text>{bio}</Card.Text>
-
               <Card.Text>
-                <a href={`https://www.instagram.com/${insta}`}><i className="fa-brands fa-instagram fa-xl" /></a>
-                <a href={`mailto: ${email}`}><i className="fa-solid fa-envelope fa-xl social"></i></a>
+                <a href={`https://www.instagram.com/${insta}`}><i className="fa-brands fa-instagram fa-xl social" /></a>
+                <a href={`mailto: ${email}`}><i className="fa-regular fa-envelope fa-xl social" /></a>
+                {extraLink && <a href={extraLink}><i class="fa-regular fa-lightbulb fa-xl social" /></a>}
               </Card.Text>
             </animated.div>
           </div>

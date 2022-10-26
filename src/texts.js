@@ -8,7 +8,8 @@ export const slogans =
     [
         'Our innovative approach to visual storytelling.', 3000,
         'We make cinematic videos.', 3000,
-        'Creative storytelling through visual ingenuity.', 3000
+        'Creative storytelling through visual ingenuity.', 3000,
+        'We tell stories to inspire', 3000
     ]
 
 // about page
@@ -40,7 +41,8 @@ export const crewInfo = [
         title: 'Creative Director / Stills',
         insta: 'justinzzhao',
         email: 'justinzhao1999@gmail.com',
-        bio: "I joined Stall7 in 2022 after obtaining my B.A. in Photo/Media, I like to drive around town while listening to music. "
+        bio: "I joined Stall7 in 2022 after obtaining my B.A. in Photo/Media, I like to drive around town while listening to music. ",
+        extraLink: 'https://justinzphotos.myportfolio.com'
     }, 
     {
         name: 'Seth Dresbeck',
