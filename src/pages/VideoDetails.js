@@ -5,6 +5,23 @@ import { videos } from "../videos";
 export default function VideoDetails() {
     const { id } = useParams()
     const video = videos.find(target => target.id === parseInt(id))
+
+    const StillsGrid = () => {
+        let stillsArray = []
+        for (let i = 1; i <= video.stillsCount; i++) {
+            stillsArray.push(`/stills/${video.stillsPath + i}.jpg`)
+        }
+        return (
+            stillsArray.map(
+                (still, index) => (
+                    <Col key={index}>
+                        <img src={process.env.PUBLIC_URL + still} alt="video still" className='videoDetails-stills' />
+                    </Col>
+                )
+            )
+        )
+    }
+
     return (
         <Container className='videoDetails-container'>
             <iframe
@@ -18,20 +35,16 @@ export default function VideoDetails() {
                 allowFullScreen 
             />
             <Row>
-                <Col className='videoDetails-info' xl={6}>
+                <Col className='videoDetails-info' sm={6}>
                     <p>{video.description}</p>
                 </Col>
-                <Col xl={6}>
-                    <img src={process.env.PUBLIC_URL + `${video.stillsPath}1.jpg`} alt="bts-still" className='videoDetails-BTS' />
-                    
-                </Col>    
+                {video.bts && <Col sm={6}>
+                    <img src={'https://via.placeholder.com/200'} alt="bts" className='videoDetails-bts' />
+                </Col>    }
             </Row>
-            <Row className='videoDetails-stills'>
-               
-            </Row>
-            <Row className='videoDetails-stills'>
-                
-            </Row>
+
+               <StillsGrid />
+            
         </Container>
     )
 }

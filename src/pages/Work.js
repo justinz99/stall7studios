@@ -18,7 +18,7 @@ export default function Work() {
 
     return (
       <Row className='works-row'>
-        <Col className='works-col' md='6'>
+        <Col className='works-col' sm='6'>
           <animated.div 
             style={styles} 
             onMouseEnter={() => toggleHover()} 

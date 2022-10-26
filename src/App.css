@@ -227,23 +227,21 @@ body {
   }
   .videoDetails-container {
     max-width: 100vw;
-
   }
 }
 
 .videoDetails-info {
-  border: 1px solid blue;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: 1px dotted black;
 }
 
-.videoDetails-info ul{
-  list-style: none;
-}
 
-.videoDetails-BTS {
-  border: 1px solid red;
+.videoDetails-bts {
   max-width: 100%;
 }
 
 .videoDetails-stills {
-  border: 1px solid yellow;
+  max-width: 100%;
+  margin-top: 2rem;
 }
