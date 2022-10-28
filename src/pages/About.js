@@ -29,7 +29,7 @@ export default function About() {
   }
 
   return (
-    <Container>
+    <Container className='about-container'>
       <Row>
         <Col className='about-studioBioCol' sm={6}>
           {studioBioParagraph(studioBio)}
@@ -49,7 +49,6 @@ export default function About() {
         </Col>
       </Row>
       <Row>
-
         <Col className='about-crewCol'>
           <ProfileCard crew={crewInfo} styles={isBigScreen ? bigScreenStaticStyles : staticStyles} />
         </Col>

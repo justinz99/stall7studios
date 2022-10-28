@@ -15,6 +15,7 @@ export const videos = [
         description: 'To inpsire everythone into working out, Wyatt gives his all in this cinematic fitness video.',
         stillsPath: '/wyattStills/',
         stillsCount: 6,
+        featured: true
     },
     {
         id: 6,
@@ -23,7 +24,8 @@ export const videos = [
         embedId: 'nfHaRDPmMAg',
         description: 'Introducing college basketball athlete: Gannon Beaman.',
         stillsPath: '/gannonStills/',
-        stillsCount: 10
+        stillsCount: 10,
+        featured: true
     },
     {
         id: 5,
@@ -41,7 +43,8 @@ export const videos = [
         embedId: 'SNhgoPm1zBA',
         description: 'A story told by our own Christopher Vasquez in which he opens up about living with depression',
         stillsPath: '/depStills/',
-        stillsCount: 4
+        stillsCount: 4,
+        featured: true
     },
     {
         id: 3,

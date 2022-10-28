@@ -21,8 +21,6 @@ a:hover {
 
 .header {
   min-height: 8rem;
-  display: flex;
-  align-items: center;
   padding: 0 10vw;
 }
 
@@ -74,9 +72,7 @@ a:hover {
 
 .home {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  width: 80vw;
 }
 
 .home-sloganText {
@@ -100,6 +96,7 @@ a:hover {
 
 .home-vidRow {
   margin-bottom: 1rem;
+  justify-content: center;
 }
 
 .home-vidThumbnail {
@@ -111,8 +108,7 @@ a:hover {
 /* about page */
 
 .about-container {
-  display: flex;
-  justify-content: space-between;
+  width: 80vw;
 }
 
 .about-studioBioCol {
@@ -146,7 +142,7 @@ a:hover {
   display: flex;
   max-width: 50vw;
   max-height: 60vh;
-  margin: 5% auto;
+  margin: 5% auto 5% 2rem;
 }
 
 .about-profileCard {
