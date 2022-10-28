@@ -27,13 +27,13 @@ export default function VideoDetails() {
             <Col>
                 <iframe
                     className='videoDetails-mainVideo'
-                    width="2240" 
-                    height="630" 
-                    src={`https://www.youtube.com/embed/${video.embedId}`} 
-                    title="YouTube video player" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture fullscreen" 
-                    allowFullScreen 
-                    />
+                    width="2240"
+                    height="630"
+                    src={`https://www.youtube.com/embed/${video.embedId}`}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture fullscreen"
+                    allowFullScreen
+                />
             </Col>
             <Row>
                 <Col className='videoDetails-info' sm={6}>
@@ -41,11 +41,11 @@ export default function VideoDetails() {
                 </Col>
                 {video.bts && <Col sm={6}>
                     <img src={'https://via.placeholder.com/200'} alt="bts" className='videoDetails-bts' />
-                </Col>    }
+                </Col>}
             </Row>
 
-               <StillsGrid />
-            
+            <StillsGrid />
+
         </Container>
     )
 }

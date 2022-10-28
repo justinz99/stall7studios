@@ -12,7 +12,7 @@ export const videos = [
         title: 'Fitness Spec Ad | BMPCC 6K + Sigma 18-35',
         thumbnail: wyattThumb,
         embedId: 'ApdtAa03uQE',
-        description: 'a short cinematic montage with Wyatt.',
+        description: 'To inpsire everythone into working out, Wyatt gives his all in this cinematic fitness video.',
         stillsPath: '/wyattStills/',
         stillsCount: 6,
     },
@@ -21,7 +21,7 @@ export const videos = [
         title: 'Basketball Spec Ad | BMPCC 6K + Sigma 18-35',
         thumbnail: gannonThumb,
         embedId: 'nfHaRDPmMAg',
-        description: 'A short cinematic film of basketball player Gannon Beaman showcasing his skills prior to his upcoming college basketball season.',
+        description: 'Introducing college basketball athlete: Gannon Beaman.',
         stillsPath: '/gannonStills/',
         stillsCount: 10
     },
@@ -30,7 +30,7 @@ export const videos = [
         title: 'Running With Drew | BMPCC 6K + Panasonic S1',
         thumbnail: drewThumb,
         embedId:'5Qi-NiTOlGs',
-        description: 'Short documentary shoot with marathon runner, Drew. This doc delves into the mind of a runner, as he trains at Smith Rock for an upcoming triathlon.',
+        description: 'Get to know Drew Walters, as he talks about how running has improved his livelihood',
         stillsPath: '/drewStills/',
         stillsCount: 4
     },
@@ -39,7 +39,7 @@ export const videos = [
         title: 'Living With It (Short Documentary) | BMPCC 6K',
         thumbnail: depThumb,
         embedId: 'SNhgoPm1zBA',
-        description: "\"Living With It\" is a short documentary about mental health and life with depression. Filmmaker Chris Vasquez's journey living with depression is conveyed through stories of hardship and struggle, to eventually an understanding of hope for the future.",
+        description: 'A story told by our own Christopher Vasquez in which he opens up about living with depression',
         stillsPath: '/depStills/',
         stillsCount: 4
     },
@@ -48,6 +48,7 @@ export const videos = [
         title: 'Smith Rock - 16mm Film Emulation | Panasonic S1',
         thumbnail: smithRockThumb,
         embedId: '6UvW0fpfRHs',
+        description: 'The Stall7 team takes in the wonderful sights Smith Rock National Park has to offer.',
         stillsPath: '/smithRockStills/',
         stillsCount: 10
     },
@@ -56,7 +57,7 @@ export const videos = [
         title: 'Dog Treat Spec Ad | BMPCC 6K + Sigma 18-35',
         thumbnail: anaThumb,
         embedId: 'kDsmbDBVEvo',
-        description: 'Nylabone Nubz dog treat spec ad shot on BMPCC 6K.',
+        description: 'A furry actor\'s debut into the commercial world with this Nylabone Nubz Dog Treats spec-ad',
         stillsPath: '/anaStills/',
         stillsCount: 4
     },
@@ -65,7 +66,7 @@ export const videos = [
         title: 'Dear Tere',
         thumbnail: tereThumb,
         embedId: '3swyuy5BdRc',
-        description: 'Dear Tere, you have worked for over 20 years and have left an impact on not just the company, but the people as well. It was an honor to hear all the wonderful things the people who care about you had to share. From all of us at Stall7Studios, we wish you a happy retirement!',
+        description: 'A congratulatory video for Nike retiree, Tere Enberg',
         stillsPath: '/tereStills/',
         stillsCount: 5
     },

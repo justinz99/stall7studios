@@ -1,42 +1,45 @@
-import { useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import { useSpring, animated } from 'react-spring'
-import { videos } from "../videos"
+import { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { useSpring, animated} from 'react-spring';
+import { useMediaQuery } from '@mui/material';
+import { videos } from '../videos';
 
 export default function Work() {
-  
+  const isBigScreen = useMediaQuery('(min-width: 576px)')
+
   const VideoCard = (props) => {
     const { id, title, thumbnail } = props.video
     const [onHover, setOnHover] = useState(false)
-    const styles = useSpring({ 
-      transform: onHover ? 'scale(1.03)' : 'scale(1)'
-    })
-    const toggleHover = () => {
-      setOnHover(!onHover)
+    
+    const spring = useSpring({
+      to: onHover ? { scale: 1.2, transform: 'rotate(5deg)', boxShadow: 'rgba(17, 12, 46, 0.3) 0px 48px 100px 0px' } : { scale: 1, transform: 'rotate(0deg)', boxShadow: 'rgba(17, 12, 46, 0.15) 0px 48px 100px 0px' },
+      config: { mass: 7, tension: 200, friction: 30 }
+  })
+
+    const handleHover = () => {
+      if (isBigScreen) {
+        setOnHover(!onHover)
+      }
     }
 
     return (
       <Row className='works-row'>
-        <Col className='works-col' sm='6'>
-          <animated.div 
-            style={styles} 
-            onMouseEnter={() => toggleHover()} 
-            onMouseLeave={() => toggleHover()}
-          >
-            <Link to={`${id}`} >
-              <img src={thumbnail} className='works-thumbnail' alt='video thumbnail' />
+        <Col md={7}>
+          <Link to={`${id}`} >
+            <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
+              <animated.img src={thumbnail} className='works-thumbnail' alt='video thumbnail' style={spring}/>
               <p className='works-title'>{title}</p>
-            </Link>
-          </animated.div>
+            </div>
+          </Link>
         </Col>
       </Row>
     )
   }
 
   return (
-    <Container>
-      {videos.map(video => (<VideoCard video={video} key={video.id} />))}
+    <Container fluid='md'>
+      {videos.map(video => <VideoCard video={video} key={video.id}/>)}
     </Container>
   );
 }

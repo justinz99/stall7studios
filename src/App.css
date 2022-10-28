@@ -1,10 +1,12 @@
 * {
   font-family: 'Dosis', sans-serif;
   background-color: #fbf7f4;
+  /* font-weight: 200, 300, 400, 500 */
 }
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 a:visited {
@@ -15,18 +17,13 @@ a:hover {
   color: #8f6894;
 }
 
-body {
-  max-width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* header */
 
 .header {
   min-height: 8rem;
   display: flex;
   align-items: center;
+  padding: 0 10vw;
 }
 
 .nav-logo {
@@ -35,7 +32,7 @@ body {
 }
 
 .nav-logo img{
-  width: 7vw;
+  width: 10vw;
   max-width: 69px;
   height: auto;
   margin-right: 1rem;
@@ -83,14 +80,11 @@ body {
 }
 
 .home-sloganText {
-  font-weight: 300;
-  /* line-height: 150%; */
-  font-size: 4rem;
   margin: 0;
   width: 80vw;
   height: 20vh;
   margin-top: 10vh;
-  margin-bottom: 20vh;
+  margin-bottom: 100px;
 }
 
 .home-sloganText::after {
@@ -122,16 +116,20 @@ body {
 }
 
 .about-studioBioCol {
-  padding: 3rem .75rem;
+  padding: 3rem 2rem 5rem 2rem;
   font-size: 1.2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .about-crewCol {
   display: flex;
-  margin-left: 2rem;
+}
+
+.about-playlist {
+  display: flex;
+  margin: 2rem 2rem 0 auto;
 }
 
 .about-footNote {
@@ -141,20 +139,19 @@ body {
 
 .about-crewContainer {
   display: block;
+  margin-left: 5rem;
 }
 
 .about-crewContainer-bigScreen {
   display: flex;
-  align-items: center;
   max-width: 50vw;
   max-height: 60vh;
-  /* border: 1px solid black; */
+  margin: 5% auto;
 }
 
 .about-profileCard {
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .about-headshot {
@@ -184,23 +181,20 @@ body {
 
 .works-row {
   margin-bottom: 2rem;
-}
-
-.works-col {
-  margin: auto;
+  justify-content: center;
 }
 
 .works-thumbnail {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 } 
 
 .works-title {
-  text-align: center;
-}
-
-.works-thumbnail:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  text-align: start;
+  font-weight: 500;
+  font-size: 1.5rem;
+  pointer-events: none;
 }
 
 /* work detail page */
@@ -209,7 +203,6 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 70vw;
-  border: 1px
 }
 
 .videoDetails-mainVideo {
@@ -233,6 +226,7 @@ body {
   padding: 1rem;
   font-size: 1.25rem;
   border: 1px dotted black;
+  margin-left: 2rem;
 }
 
 
