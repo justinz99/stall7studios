@@ -50,6 +50,6 @@ export const crewInfo = [
         title: 'Cinematographer / Editor',
         insta: 'sethdrez',
         email: 'sdresbeck@gmail.com',
-        bio: "I am a camera enthusiast and part-time model. I am currently attending Eastern Oregon University for my Bachelor\’s in Business. Being from Oregon, I enjoy hiking and snowboarding."
+        bio: "I am a camera enthusiast and part-time model. I am currently attending Eastern Oregon University for my Bachelor’s in Business. Being from Oregon, I enjoy hiking and snowboarding."
     }
 ]
