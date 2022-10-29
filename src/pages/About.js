@@ -106,9 +106,9 @@ function ProfileCard(props) {
               <br />
               <Card.Text>{bio}</Card.Text>
               <Card.Text>
-                <a href={`https://www.instagram.com/${insta}`}><i className="fa-brands fa-instagram fa-xl social" /></a>
-                <a href={`mailto: ${email}`}><i className="fa-regular fa-envelope fa-xl social" /></a>
-                {extraLink && <a href={extraLink}><i className="fa-regular fa-lightbulb fa-xl social" /></a>}
+                <a href={`https://www.instagram.com/${insta}`}><i className="fa-brands fa-instagram fa-xl" style={{marginRight: '10px'}}/></a>
+                <a href={`mailto: ${email}`}><i className="fa-regular fa-envelope fa-xl" style={{marginRight: '10px'}}/></a>
+                {extraLink && <a href={extraLink}><i className="fa-regular fa-lightbulb fa-xl" style={{marginRight: '10px'}}/></a>}
               </Card.Text>
             </animated.div>
           </div>

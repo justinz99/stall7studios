@@ -4,17 +4,17 @@ import { Navbar, Nav } from 'react-bootstrap'
 
 export default function Header() {
     const activeStyle = ({ isActive }) => {
-        return isActive ? { textDecoration: 'underline' } : undefined
+        return isActive ? {textDecoration: 'underline', justifyContent: 'end', display: 'flex' } : {display: 'flex', justifyContent: 'end'}
     }
 
     return (
-        <Navbar className='header' expand='lg'>
+        <Navbar className='header' expand='md'>
             <Navbar.Brand href='/' className='nav-logo'>
                 <img src={logo} alt='header logo' />
                 <h2>Stall7 Studios</h2>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-            <Navbar.Collapse id='responsive-navbar-nav'>
+            <Navbar.Toggle aria-controls='responsive-navbar' />
+            <Navbar.Collapse id='responsive-navbar'>
                 <Nav className='header-nav'>
                     <NavLink to='/' end style={activeStyle}>home</NavLink>
                     <NavLink to='/work' style={activeStyle}>work</NavLink>
