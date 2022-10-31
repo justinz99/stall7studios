@@ -9,7 +9,6 @@ export const slogans =
         'Our innovative approach to visual storytelling.', 3000,
         'We make cinematic videos.', 3000,
         'Creative storytelling through visual ingenuity.', 3000,
-        'We tell stories to inspire.', 3000
     ]
 
 // about page
