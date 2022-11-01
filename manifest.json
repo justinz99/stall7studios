@@ -1,0 +1,20 @@
+{
+  "short_name": "Stall7",
+  "name": "Stall7 Studios",
+  "icons": [
+    {
+      "src": "icon64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "icon180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#fbf7f4"
+}
