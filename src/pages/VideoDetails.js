@@ -35,17 +35,17 @@ export default function VideoDetails() {
                     allowFullScreen
                 />
             </Col>
-            <Row>
-                <Col className='videoDetails-info' sm={6}>
+            <Row style={{ margin: '0' }}>
+                <Col className='videoDetails-info' md={6}>
                     <p>{video.description}</p>
                 </Col>
-                {video.bts && <Col sm={6}>
-                    <img src={'https://via.placeholder.com/200'} alt="bts" className='videoDetails-bts' />
-                </Col>}
+                {video.bts &&
+                    <Col md={6}>
+                        <img src={video.bts} alt="bts" className='videoDetails-bts' />
+                    </Col>
+                }
             </Row>
-
             <StillsGrid />
-
         </Container>
     )
 }
