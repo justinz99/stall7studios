@@ -38,18 +38,20 @@ function VideoPlayer(props) {
     <Row className="home-vidRow">
       <Col sm={10}>
         <Link to={`/work/${id}`}>
-          <img src={thumbnail} className='home-vidThumbnail' alt='featured video thumbnail' />
-          <video
-            src={preview}
-            type='video/mp4'
-            preload='metadata'
-            className='home-vidPreview'
-            loop
-            playsInline
-            muted
-            onMouseEnter={e => e.target.play()}
-            onMouseLeave={e => e.target.pause()}
-          />
+          <div className='home-vidContainer'>
+            <img src={thumbnail} className='home-vidThumbnail' alt='featured video thumbnail' />
+            <video
+              src={preview}
+              type='video/mp4'
+              preload='metadata'
+              className='home-vidPreview'
+              loop
+              playsInline
+              muted
+              onMouseEnter={e => e.target.play()}
+              onMouseLeave={e => e.target.pause()}
+            />
+          </div>
         </Link>
       </Col>
     </Row>
