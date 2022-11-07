@@ -12,7 +12,7 @@ export default function About() {
     return studioBio.split('\n').map((line) => (<p key={line.length}>{line}</p>))
   }
 
-  const staticStyles = {
+  const styles = {
     crewContainer: 'about-crewContainer',
     headshot: 'about-headshot',
     cardInfo: 'about-cardInfo',
@@ -20,7 +20,7 @@ export default function About() {
     animatedMinWidth: '20vw',
   }
 
-  const bigScreenStaticStyles = {
+  const bigScreenStyles = {
     crewContainer: 'about-crewContainer-bigScreen',
     headshot: 'about-headshot-bigScreen',
     cardInfo: 'about-cardInfo-bigScreen',
@@ -50,7 +50,7 @@ export default function About() {
       </Row>
       <Row>
         <Col className='about-crewCol'>
-          <ProfileCard crew={crewInfo} styles={isBigScreen ? bigScreenStaticStyles : staticStyles} />
+          <ProfileCard crew={crewInfo} styles={isBigScreen ? bigScreenStyles : styles} />
         </Col>
       </Row>
     </Container>
@@ -87,6 +87,7 @@ function ProfileCard(props) {
     props.crew.length,
     animatedStyles(profileOpen)
   )
+
   return (
     <div className={props.styles.crewContainer}>
       {springs.map(({ width, scale, display, opacity, y }, i) => {

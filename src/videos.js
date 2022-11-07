@@ -5,6 +5,9 @@ import gannonThumb from './images/videoThumbnails/gannonThumb.jpg'
 import wyattThumb from './images/videoThumbnails/wyattThumb.jpg'
 import tereThumb from './images/videoThumbnails/tereThumb.jpg'
 import smithRockThumb from './images/videoThumbnails/smithRockThumb.jpg'
+import wyattPreview from './video-previews/wyattPreview.mp4'
+import gannonPreview from './video-previews/gannonPreview.mp4'
+import depressionPreview from './video-previews/depressionPreview.mp4'
 
 export const videos = [
     {
@@ -15,7 +18,7 @@ export const videos = [
         description: 'To inpsire everythone into working out, Wyatt gives his all in this cinematic fitness video.',
         stillsPath: '/wyattStills/',
         stillsCount: 6,
-        featured: true
+        preview: wyattPreview
     },
     {
         id: 6,
@@ -25,7 +28,7 @@ export const videos = [
         description: 'Introducing college basketball athlete: Gannon Beaman.',
         stillsPath: '/gannonStills/',
         stillsCount: 10,
-        featured: true
+        preview: gannonPreview
     },
     {
         id: 5,
@@ -44,7 +47,7 @@ export const videos = [
         description: 'A story told by our own Christopher Vasquez in which he opens up about living with depression',
         stillsPath: '/depStills/',
         stillsCount: 4,
-        featured: true
+        preview: depressionPreview
     },
     {
         id: 3,
