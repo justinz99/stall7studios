@@ -1,18 +1,17 @@
-import { Col, Container, Row } from 'react-bootstrap'
-import { TypeAnimation } from 'react-type-animation'
+import { Link } from 'react-router-dom';
+import { Col, Container, Row } from 'react-bootstrap';
+import { TypeAnimation } from 'react-type-animation';
 import { useMediaQuery } from '@mui/material';
 import { slogans } from '../texts';
 import { videos } from '../videos';
 
-
 export default function Home() {
   const isBigScreen = useMediaQuery('(min-width: 576px)')
-  const typeAnimationStyle = 
-    isBigScreen 
-    ? { fontWeight: 500, fontSize: '4rem' } 
-    : { fontWeight: 300, fontSize: '200%' }
-  const videoStyle = isBigScreen ? { height: 600 } : { height: 400 }
-  const featuredVideos = videos.filter(video => video.featured)
+  const typeAnimationStyle =
+    isBigScreen
+      ? { fontWeight: 500, fontSize: '4rem' }
+      : { fontWeight: 300, fontSize: '200%' }
+  const featuredVideos = videos.filter(video => video.preview)
 
   return (
     <Container className="home">
@@ -26,21 +25,37 @@ export default function Home() {
         style={{ typeAnimationStyle }}
       />
       {featuredVideos.map(video => (
-        <Row className="home-vidRow" key={video.id}>
-          <Col sm={10}>
-            <iframe
-              width="100%"
-              height={videoStyle.height}
-              src={`https://www.youtube.com/embed/${video.embedId}`}
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </Col>
-        </Row>
+        <VideoPlayer video={video} key={video.id} />
       ))}
     </Container>
   );
+}
+
+function VideoPlayer(props) {
+  const { id, thumbnail, preview } = props.video
+
+  return (
+    <Row className="home-vidRow">
+      <Col sm={10}>
+        <Link to={`/work/${id}`}>
+          <div className='home-vidContainer'>
+            <img src={thumbnail} className='home-vidThumbnail' alt='featured video thumbnail' />
+            <video
+              src={preview}
+              type='video/mp4'
+              preload='metadata'
+              className='home-vidPreview'
+              loop
+              playsInline
+              muted
+              onMouseEnter={e => e.target.play()}
+              onMouseLeave={e => e.target.pause()}
+            />
+          </div>
+        </Link>
+      </Col>
+    </Row>
+  )
 }
 
 
