@@ -103,6 +103,7 @@ a:hover {
 
 .home-vidContainer {
   position: relative;
+  display: flex;
 }
 
 .home-vidThumbnail {
@@ -126,7 +127,14 @@ a:hover {
 
 .home-vidPreview:hover {
   opacity: 1;
-  transform: scale(1.05);
+}
+
+.home-vidTitle {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  margin-left: 10px;
+  z-index: -1;
 }
 
 /* about page */

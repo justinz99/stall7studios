@@ -32,7 +32,7 @@ export default function Home() {
 }
 
 function VideoPlayer(props) {
-  const { id, thumbnail, preview } = props.video
+  const { title, id, thumbnail, preview } = props.video
 
   return (
     <Row className="home-vidRow">
@@ -51,6 +51,7 @@ function VideoPlayer(props) {
               onMouseEnter={e => e.target.play()}
               onMouseLeave={e => e.target.pause()}
             />
+            <h1 className='home-vidTitle'>{title}</h1>
           </div>
         </Link>
       </Col>
