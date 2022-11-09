@@ -121,8 +121,8 @@ a:hover {
   left: 0;
   opacity: 0;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  transition: all .65s cubic-bezier(.22,1,.36,1);
-  transform-origin: center center;
+  transition: all 1s cubic-bezier(.22,1,.36,1);
+  z-index: 2;
 }
 
 .home-vidPreview:hover {
@@ -131,10 +131,11 @@ a:hover {
 
 .home-vidTitle {
   position: absolute;
-  top: 50%;
+  bottom: 5%;
   background-color: transparent;
-  margin-left: 10px;
-  z-index: -1;
+  left: 5%;
+  z-index: 1;
+  color: rgb(251, 247, 244, .8);
 }
 
 /* about page */

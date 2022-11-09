@@ -25,7 +25,7 @@ export default function Home() {
         style={{ typeAnimationStyle }}
       />
       {featuredVideos.map(video => (
-        <VideoPlayer video={video} key={video.id} />
+        <VideoPlayer video={video} key={video.id} isBigScreen={isBigScreen}/>
       ))}
     </Container>
   );
@@ -33,14 +33,16 @@ export default function Home() {
 
 function VideoPlayer(props) {
   const { title, id, thumbnail, preview } = props.video
+  const isIOS = navigator.userAgent.indexOf("like Mac") !== -1 ? true : false
 
   return (
     <Row className="home-vidRow">
       <Col sm={10}>
         <Link to={`/work/${id}`}>
           <div className='home-vidContainer'>
+            <h3 className='home-vidTitle'>{title}</h3>
             <img src={thumbnail} className='home-vidThumbnail' alt='featured video thumbnail' />
-            <video
+            {!isIOS && <video
               src={preview}
               type='video/mp4'
               preload='metadata'
@@ -50,8 +52,7 @@ function VideoPlayer(props) {
               muted
               onMouseEnter={e => e.target.play()}
               onMouseLeave={e => e.target.pause()}
-            />
-            <h1 className='home-vidTitle'>{title}</h1>
+            />}
           </div>
         </Link>
       </Col>
