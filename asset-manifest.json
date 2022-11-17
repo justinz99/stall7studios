@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.efb3176b.css",
-    "main.js": "/static/js/main.9cafd6ad.js",
+    "main.css": "/static/css/main.815503b7.css",
+    "main.js": "/static/js/main.b4271278.js",
+    "static/media/colognePreview.mp4": "/static/media/colognePreview.6b85d1c93c33d035cace.mp4",
     "static/media/gannonPreview.mp4": "/static/media/gannonPreview.ed8c2a93912a2550d1db.mp4",
     "static/media/depressionPreview.mp4": "/static/media/depressionPreview.530167abe577349225a5.mp4",
     "static/media/wyattPreview.mp4": "/static/media/wyattPreview.9558c651134048ee12bf.mp4",
@@ -16,12 +17,13 @@
     "static/media/BrandonForeman.jpg": "/static/media/BrandonForeman.25ce8d012ba1148afaab.jpg",
     "static/media/SethDresbeck.jpg": "/static/media/SethDresbeck.134d2b1fc3cd323e4bd9.jpg",
     "static/media/ChrisVasquez.jpg": "/static/media/ChrisVasquez.f90f49adfa5e8c1b0bb5.jpg",
+    "static/media/cologneThumb.jpg": "/static/media/cologneThumb.7b19c8fa5bf3ba94993f.jpg",
     "index.html": "/index.html",
-    "main.efb3176b.css.map": "/static/css/main.efb3176b.css.map",
-    "main.9cafd6ad.js.map": "/static/js/main.9cafd6ad.js.map"
+    "main.815503b7.css.map": "/static/css/main.815503b7.css.map",
+    "main.b4271278.js.map": "/static/js/main.b4271278.js.map"
   },
   "entrypoints": [
-    "static/css/main.efb3176b.css",
-    "static/js/main.9cafd6ad.js"
+    "static/css/main.815503b7.css",
+    "static/js/main.b4271278.js"
   ]
 }
