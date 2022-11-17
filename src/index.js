@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ReactGA from 'react-ga';
 import { HashRouter } from 'react-router-dom';
 import App from './App';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize("G-RM96H420F4");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-ReactGA.initialize('G-RM96H420F4', { standardImplementation: true });
 
 root.render(
   <React.StrictMode>
