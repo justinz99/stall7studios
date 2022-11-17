@@ -245,31 +245,33 @@ a:hover {
 }
 
 .videoDetails-mainVideo {
-  /* align-self: center; */
   max-width: 100%;
   max-height: auto;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
+
   .videoDetails-main {
     max-width: 100%;
     height: auto;
   }
+
   .videoDetails-container {
     max-width: 100vw;
   }
+  
 }
 
 .videoDetails-info {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 0.25rem;
   font-size: 1.25rem;
-  border: 1px dotted black;
 }
 
-
-.videoDetails-bts {
+.videoDetails-btsCol {
   max-width: 100%;
+  padding: 0px;
 }
 
 .videoDetails-stills {
