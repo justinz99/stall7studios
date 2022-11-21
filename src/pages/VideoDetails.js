@@ -31,17 +31,22 @@ export default function VideoDetails() {
                     height="630"
                     src={`https://www.youtube.com/embed/${video.embedId}`}
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture fullscreen"
-                    allowFullScreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 />
             </Col>
-            <Row style={{ margin: '0' }}>
+            <Row style={{ margin: '0', display: 'flex', justifyContent: 'space-between' }}>
                 <Col className='videoDetails-info' md={6}>
                     <p>{video.description}</p>
                 </Col>
                 {video.bts &&
-                    <Col md={6}>
-                        <img src={video.bts} alt="bts" className='videoDetails-bts' />
+                    <Col className="videoDetails-btsCol" md={6}>
+                        <iframe
+                            width="100%"
+                            height="300"
+                            src={video.bts}
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"  
+                        />
                     </Col>
                 }
             </Row>

@@ -5,17 +5,31 @@ import gannonThumb from './images/videoThumbnails/gannonThumb.jpg'
 import wyattThumb from './images/videoThumbnails/wyattThumb.jpg'
 import tereThumb from './images/videoThumbnails/tereThumb.jpg'
 import smithRockThumb from './images/videoThumbnails/smithRockThumb.jpg'
+import cologneThumb from './images/videoThumbnails/cologneThumb.jpg'
+
 import wyattPreview from './video-previews/wyattPreview.mp4'
 import gannonPreview from './video-previews/gannonPreview.mp4'
 import depressionPreview from './video-previews/depressionPreview.mp4'
+import colognePreview from './video-previews/colognePreview.mp4'
 
 export const videos = [
+    {
+        id: 8,
+        title: 'Cinematic Cologne Commercial | BMPCC 6K + Sigma 18-35',
+        thumbnail: cologneThumb,
+        embedId: '22M_afWZ_Q4', 
+        description: 'We decided to create a conceptual Giorgio Armani-inspired cologne commercial with the Blackmagic Pocket Cinema Camera 6K paired with the Sigma 18-35 f1.8 lens. Additionally, our drone footage was captured with the DJI Mavic 3. To illustrate a raw and immersive feel we shot everything handheld at 24fps.',
+        stillsPath: '/cologneStills/',
+        stillsCount: 9,
+        bts: "https://www.youtube.com/embed/8vHX0w0cjHc",
+        preview: colognePreview
+    },
     {
         id: 7,
         title: 'Fitness Spec Ad | BMPCC 6K + Sigma 18-35',
         thumbnail: wyattThumb,
         embedId: 'ApdtAa03uQE',
-        description: 'To inpsire everythone into working out, Wyatt gives his all in this cinematic fitness video.',
+        description: 'To inpsire everyone into working out, Wyatt gives his all in this cinematic fitness video.',
         stillsPath: '/wyattStills/',
         stillsCount: 6,
         preview: wyattPreview
