@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import { useSpring, animated} from 'react-spring';
 import { useMediaQuery } from '@mui/material';
 import { videos } from '../videos';
+import ReactGA from 'react-ga4';
 
 export default function Work() {
-  const isBigScreen = useMediaQuery('(min-width: 576px)')
+  ReactGA.send({ hitType: "pageview", page: "/work", title: "Work" });
+  const isBigScreen = useMediaQuery('(min-width: 576px)');
 
   const VideoCard = (props) => {
-    const { id, title, thumbnail } = props.video
-    const [onHover, setOnHover] = useState(false)
+    const { id, title, thumbnail } = props.video;
+    const [onHover, setOnHover] = useState(false);
     
     const spring = useSpring({
       to: onHover ? { scale: 1.2, transform: 'rotate(5deg)', boxShadow: 'rgba(17, 12, 46, 0.3) 0px 48px 100px 0px' } : { scale: 1, transform: 'rotate(0deg)', boxShadow: 'rgba(17, 12, 46, 0.15) 0px 48px 100px 0px' },
@@ -19,7 +21,7 @@ export default function Work() {
 
     const handleHover = () => {
       if (isBigScreen) {
-        setOnHover(!onHover)
+        setOnHover(!onHover);
       }
     }
 

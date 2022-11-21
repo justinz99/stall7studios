@@ -3,13 +3,14 @@ import { animated, useSprings } from 'react-spring';
 import { Container, Row, Col } from 'react-bootstrap';
 import { crewInfo, studioBio } from '../texts';
 import { useMediaQuery } from '@mui/material';
-
+import ReactGA from 'react-ga4';
 
 export default function About() {
-  const isBigScreen = useMediaQuery('(min-width: 576px)')
+  ReactGA.send({ hitType: "pageview", page: "/about", title: "About" });
+  const isBigScreen = useMediaQuery('(min-width: 576px)');
 
   const studioBioParagraph = (studioBio) => {
-    return studioBio.split('\n').map((line) => (<p key={line.length}>{line}</p>))
+    return studioBio.split('\n').map((line) => (<p key={line.length}>{line}</p>));
   }
 
   const styles = {
@@ -58,27 +59,27 @@ export default function About() {
 }
 
 function ProfileCard(props) {
-  const [profileOpen, setProfileOpen] = useState(null)
-  const lastProfileOpen = useRef(null)
+  const [profileOpen, setProfileOpen] = useState(null);
+  const lastProfileOpen = useRef(null);
 
   const toggleProfileOpen = (profile) => {
     if (profileOpen === profile) {
-      setProfileOpen(null)
+      setProfileOpen(null);
     }
-    setProfileOpen(profile)
+    setProfileOpen(profile);
   }
 
   useEffect(() => {
     lastProfileOpen.current = profileOpen
-  }, [profileOpen])
+  }, [profileOpen]);
 
   const handleClick = (profile) => {
-    toggleProfileOpen(profile)
-    setSprings.start(animatedStyles(profile))
+    toggleProfileOpen(profile);
+    setSprings.start(animatedStyles(profile));
   }
 
   const animatedStyles = (targetProfile) => profile => {
-    const { animatedMaxWidth, animatedMinWidth } = props.styles
+    const { animatedMaxWidth, animatedMinWidth } = props.styles;
     return (
       targetProfile === profile
         ?

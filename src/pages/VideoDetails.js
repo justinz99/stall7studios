@@ -1,15 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { videos } from "../videos";
+import ReactGA from 'react-ga4';
 
 export default function VideoDetails() {
-    const { id } = useParams()
-    const video = videos.find(target => target.id === parseInt(id))
+    const { id } = useParams();
+    ReactGA.send({ hitType: "pageview", title: `video ${id}` });
+    const video = videos.find(target => target.id === parseInt(id));
 
     const StillsGrid = () => {
         let stillsArray = []
         for (let i = 1; i <= video.stillsCount; i++) {
-            stillsArray.push(`/stills/${video.stillsPath + i}.jpg`)
+            stillsArray.push(`/stills/${video.stillsPath + i}.jpg`);
         }
         return (
             stillsArray.map(

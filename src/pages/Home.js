@@ -4,14 +4,16 @@ import { TypeAnimation } from 'react-type-animation';
 import { useMediaQuery } from '@mui/material';
 import { slogans } from '../texts';
 import { videos } from '../videos';
+import ReactGA from 'react-ga4';
 
 export default function Home() {
-  const isBigScreen = useMediaQuery('(min-width: 576px)')
+  ReactGA.send({ hitType: "pageview", page: "/", title: "Home" });
+  const isBigScreen = useMediaQuery('(min-width: 576px)');
   const typeAnimationStyle =
     isBigScreen
       ? { fontWeight: 500, fontSize: '4rem' }
-      : { fontWeight: 300, fontSize: '200%' }
-  const featuredVideos = videos.filter(video => video.preview)
+      : { fontWeight: 300, fontSize: '200%' };
+  const featuredVideos = videos.filter(video => video.preview);
 
   return (
     <Container className="home">
@@ -32,8 +34,8 @@ export default function Home() {
 }
 
 function VideoPlayer(props) {
-  const { title, id, thumbnail, preview } = props.video
-  const isIOS = navigator.userAgent.indexOf("like Mac") !== -1 ? true : false
+  const { title, id, thumbnail, preview } = props.video;
+  const isIOS = navigator.userAgent.indexOf("like Mac") !== -1 ? true : false;
 
   return (
     <Row className="home-vidRow">
