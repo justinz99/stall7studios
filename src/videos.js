@@ -6,13 +6,26 @@ import wyattThumb from './images/videoThumbnails/wyattThumb.jpg'
 import tereThumb from './images/videoThumbnails/tereThumb.jpg'
 import smithRockThumb from './images/videoThumbnails/smithRockThumb.jpg'
 import cologneThumb from './images/videoThumbnails/cologneThumb.jpg'
+import monFishThumb from './images/videoThumbnails/monFishThumb.jpg'
 
 import wyattPreview from './video-previews/wyattPreview.mp4'
 import gannonPreview from './video-previews/gannonPreview.mp4'
 import depressionPreview from './video-previews/depressionPreview.mp4'
 import colognePreview from './video-previews/colognePreview.mp4'
+import monFishPreview from './video-previews/monFishPreview.mp4'
 
 export const videos = [
+    {
+        id: 9,
+        title: 'falling out of love with you',
+        thumbnail: monFishThumb,
+        embedId: 'NymficMGKME', 
+        description: 'this is our take on Montell Fish\'s "falling out of love with you". ',
+        stillsPath: '/monFishStills/',
+        stillsCount: 10,
+        bts: "https://www.youtube.com/embed/8vHX0w0cjHc",
+        preview: monFishPreview
+    },
     {
         id: 8,
         title: 'Cinematic Cologne Commercial | BMPCC 6K + Sigma 18-35',
