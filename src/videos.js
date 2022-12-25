@@ -23,7 +23,7 @@ export const videos = [
         description: 'this is our take on Montell Fish\'s "falling out of love with you". ',
         stillsPath: '/monFishStills/',
         stillsCount: 10,
-        bts: "https://www.youtube.com/embed/8vHX0w0cjHc",
+        bts: "https://www.youtube.com/embed/V07n9FhPMJc",
         preview: monFishPreview
     },
     {
