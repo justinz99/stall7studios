@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useMediaQuery } from '@mui/material';
 import { slogans } from '../texts';
 import { videos } from '../videos';
+
 import ReactGA from 'react-ga4';
 
 export default function Home() {
@@ -15,8 +16,10 @@ export default function Home() {
       : { fontWeight: 300, fontSize: '200%' };
   const featuredVideos = videos.filter(video => video.preview);
 
+
   return (
     <Container className="home">
+      
       <TypeAnimation
         sequence={slogans}
         className='home-sloganText'
@@ -26,6 +29,16 @@ export default function Home() {
         cursor={false}
         style={{ typeAnimationStyle }}
       />
+      <h3>watch the 2022 reel:</h3>
+      <iframe
+          className='home-showreel'
+          width="2240"
+          height="630"
+          src={`https://www.youtube.com/embed/e_8HQwqB5xQ`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      />
+      <h3>featured work:</h3>
       {featuredVideos.map(video => (
         <VideoPlayer video={video} key={video.id} isBigScreen={isBigScreen}/>
       ))}

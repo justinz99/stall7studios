@@ -80,8 +80,8 @@ a:hover {
 .home-sloganText {
   margin: 0;
   width: 80vw;
-  height: 20vh;
-  margin-top: 10vh;
+  height: 25vh;
+  margin-top: 20vh;
   margin-bottom: 100px;
 }
 
@@ -94,6 +94,15 @@ a:hover {
   50% {
     opacity: 0;
   }
+}
+
+
+.home-showreel {
+  max-width: 100%;
+  height: 50vh;
+  max-height: 560px;
+  margin-bottom: 5em;
+  border-radius: 10px;
 }
 
 .home-vidRow {
