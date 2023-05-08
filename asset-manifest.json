@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0bbcfe45.css",
-    "main.js": "/static/js/main.449be5c9.js",
+    "main.js": "/static/js/main.a4f0bdde.js",
     "static/media/colognePreview.mp4": "/static/media/colognePreview.6b85d1c93c33d035cace.mp4",
     "static/media/monFishPreview.mp4": "/static/media/monFishPreview.6f29bdb21ec371a69f76.mp4",
     "static/media/gannonPreview.mp4": "/static/media/gannonPreview.ed8c2a93912a2550d1db.mp4",
@@ -14,6 +14,7 @@
     "static/media/tereThumb.jpg": "/static/media/tereThumb.ea58c487543f1ccdad79.jpg",
     "static/media/wyattThumb.jpg": "/static/media/wyattThumb.fd2c6a5d9b52158b6ced.jpg",
     "static/media/depThumb.jpg": "/static/media/depThumb.bdc7021a784b58c0551b.jpg",
+    "static/media/speakerAdThumb.png": "/static/media/speakerAdThumb.6b3ad2121f73a464c86c.png",
     "static/media/JustinZhao.jpg": "/static/media/JustinZhao.53be4deffc648bb15a68.jpg",
     "static/media/BrandonForeman.jpg": "/static/media/BrandonForeman.25ce8d012ba1148afaab.jpg",
     "static/media/monFishThumb.jpg": "/static/media/monFishThumb.9b327cf51b0539e95831.jpg",
@@ -22,10 +23,10 @@
     "static/media/cologneThumb.jpg": "/static/media/cologneThumb.7b19c8fa5bf3ba94993f.jpg",
     "index.html": "/index.html",
     "main.0bbcfe45.css.map": "/static/css/main.0bbcfe45.css.map",
-    "main.449be5c9.js.map": "/static/js/main.449be5c9.js.map"
+    "main.a4f0bdde.js.map": "/static/js/main.a4f0bdde.js.map"
   },
   "entrypoints": [
     "static/css/main.0bbcfe45.css",
-    "static/js/main.449be5c9.js"
+    "static/js/main.a4f0bdde.js"
   ]
 }
