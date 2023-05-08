@@ -37,7 +37,7 @@ export const crewInfo = [
     {
         name: 'Justin Zhao',
         pic: jzImg,
-        title: 'Creative Director / Stills',
+        title: 'Creative Director / Producer / BTS',
         insta: 'justinzzhao',
         email: 'justinzhao1999@gmail.com',
         bio: "I joined Stall7 in 2022 after obtaining my B.A. from University of Washington. I like to drive around town while vibing to music. ",

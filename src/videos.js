@@ -7,6 +7,8 @@ import tereThumb from './images/videoThumbnails/tereThumb.jpg'
 import smithRockThumb from './images/videoThumbnails/smithRockThumb.jpg'
 import cologneThumb from './images/videoThumbnails/cologneThumb.jpg'
 import monFishThumb from './images/videoThumbnails/monFishThumb.jpg'
+import speakerAdThumb from './images/videoThumbnails/speakerAdThumb.png'
+
 
 import wyattPreview from './video-previews/wyattPreview.mp4'
 import gannonPreview from './video-previews/gannonPreview.mp4'
@@ -16,8 +18,16 @@ import monFishPreview from './video-previews/monFishPreview.mp4'
 
 export const videos = [
     {
+        id: 10,
+        title: 'Speaker Spec Commercial',
+        thumbnail: speakerAdThumb,
+        embedId: '1Q-YecFJ8Tw', 
+        description: 'Dance to the beat with our new speaker spec ad! Although simple and straightforward, we focused on pre-production as much as possible.',
+        bts: "https://youtube.com/embed/LyxEgmwQ_Gc",
+    },
+    {
         id: 9,
-        title: 'falling out of love with you',
+        title: 'falling out of love with you, a spec music video',
         thumbnail: monFishThumb,
         embedId: 'NymficMGKME', 
         description: 'this is our take on Montell Fish\'s "falling out of love with you". ',
@@ -28,7 +38,7 @@ export const videos = [
     },
     {
         id: 8,
-        title: 'Cinematic Cologne Commercial | BMPCC 6K + Sigma 18-35',
+        title: 'Cologne Spec Commercial',
         thumbnail: cologneThumb,
         embedId: '22M_afWZ_Q4', 
         description: 'We decided to create a conceptual Giorgio Armani-inspired cologne commercial with the Blackmagic Pocket Cinema Camera 6K paired with the Sigma 18-35 f1.8 lens. Additionally, our drone footage was captured with the DJI Mavic 3. To illustrate a raw and immersive feel we shot everything handheld at 24fps.',
@@ -39,7 +49,7 @@ export const videos = [
     },
     {
         id: 7,
-        title: 'Fitness Spec Ad | BMPCC 6K + Sigma 18-35',
+        title: 'Cinematic Fitness Film',
         thumbnail: wyattThumb,
         embedId: 'ApdtAa03uQE',
         description: 'To inpsire everyone into working out, Wyatt gives his all in this cinematic fitness video.',
@@ -49,7 +59,7 @@ export const videos = [
     },
     {
         id: 6,
-        title: 'Basketball Spec Ad | BMPCC 6K + Sigma 18-35',
+        title: 'Cinematic Basketball Film',
         thumbnail: gannonThumb,
         embedId: 'nfHaRDPmMAg',
         description: 'Introducing college basketball athlete: Gannon Beaman.',
@@ -59,7 +69,7 @@ export const videos = [
     },
     {
         id: 5,
-        title: 'Running With Drew | BMPCC 6K + Panasonic S1',
+        title: 'Running With Drew',
         thumbnail: drewThumb,
         embedId:'5Qi-NiTOlGs',
         description: 'Get to know Drew Walters, as he talks about how running has improved his livelihood',
@@ -68,7 +78,7 @@ export const videos = [
     },
     {
         id: 4,
-        title: 'Living With It (Short Documentary) | BMPCC 6K',
+        title: 'Living With It (Short Documentary)',
         thumbnail: depThumb,
         embedId: 'SNhgoPm1zBA',
         description: 'A story told by our own Christopher Vasquez in which he opens up about living with depression',
@@ -78,7 +88,7 @@ export const videos = [
     },
     {
         id: 3,
-        title: 'Smith Rock - 16mm Film Emulation | Panasonic S1',
+        title: 'Smith Rock - 16mm Film Emulation',
         thumbnail: smithRockThumb,
         embedId: '6UvW0fpfRHs',
         description: 'The Stall7 team takes in the wonderful sights Smith Rock National Park has to offer.',
@@ -87,7 +97,7 @@ export const videos = [
     },
     {
         id: 2,
-        title: 'Dog Treat Spec Ad | BMPCC 6K + Sigma 18-35',
+        title: 'Dog Treat Spec Commercial',
         thumbnail: anaThumb,
         embedId: 'kDsmbDBVEvo',
         description: 'A furry actor\'s debut into the commercial world with this Nylabone Nubz Dog Treats spec-ad',
