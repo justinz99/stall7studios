@@ -34,15 +34,15 @@ export const crewInfo = [
         email: 'cryanvasquez@gmail.com',
         bio: "I am a director, writer, and portrait photographer. I was born in Santa Ana where I discovered my passion for filmmaking. In my free time I organize songs into playlists for every moment and mood."
     }, 
-    {
-        name: 'Justin Zhao',
-        pic: jzImg,
-        title: 'Creative Director / Producer / BTS',
-        insta: 'justinzzhao',
-        email: 'justinzhao1999@gmail.com',
-        bio: "I joined Stall7 in 2022 after obtaining my B.A. from University of Washington. I like to drive around town while vibing to music. ",
-        extraLink: 'https://justinzphotos.myportfolio.com'
-    }, 
+    // {
+    //     name: 'Justin Zhao',
+    //     pic: jzImg,
+    //     title: 'Creative Director / Producer / BTS',
+    //     insta: 'justinzzhao',
+    //     email: 'justinzhao1999@gmail.com',
+    //     bio: "I joined Stall7 in 2022 after obtaining my B.A. from University of Washington. I like to drive around town while vibing to music. ",
+    //     extraLink: 'https://justinzphotos.myportfolio.com'
+    // }, 
     {
         name: 'Seth Dresbeck',
         pic: sdImg,
